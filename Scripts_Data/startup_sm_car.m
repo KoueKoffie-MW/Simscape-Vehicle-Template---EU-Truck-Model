@@ -3,10 +3,10 @@ function startup_sm_car
 % Copyright 2019-2023 The MathWorks, Inc.
 % Function adapted by Lorenzo Nicoletti to reduce the truck model
 
-curr_proj = simulinkproject;
+%curr_proj = simulinkproject;
 
 % Add folders with Simscape Multibody tire subsystem to path if MATLAB version R2021b or higher
-addpath([curr_proj.RootFolder filesep 'Libraries' filesep 'Vehicle' filesep 'Tire' filesep 'MFMbody' filesep 'MFMbody']);
+%addpath([curr_proj.RootFolder filesep 'Libraries' filesep 'Vehicle' filesep 'Tire' filesep 'MFMbody' filesep 'MFMbody']);
 
 %% Load visualization and other parameters in workspace
 Visual = sm_car_param_visual('default');
@@ -21,7 +21,12 @@ evalin('base','Init_TrailerLKW');
 evalin('base','Init_data_LKW')
 
 %% Load Maneuver database
-evalin('base','Maneuver_LKW')
+sm_car_gen_init_database;
+load('MDatabase_file.mat');
+eval(['db_structure = ' 'MDatabase'  ';']);
+assignin('base','MDatabase',db_structure);
+evalin('base','Maneuver = MDatabase.WOT_Braking.Truck_Amandla;');
+% evalin('base','Maneuver_LKW')
 
 %% Load Driver database
 sm_car_gen_driver_database;

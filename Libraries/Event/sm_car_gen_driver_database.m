@@ -2,120 +2,15 @@ function sm_car_gen_driver_database
 % Define vehicle-level initial conditions for maneuvers
 % Vehicle position, orientation, initial speed, initial wheel speed
 %
+% THIS FUNCTION HAS BEEN ADAPTED TO INCLUDE ONLY THE DRIVER DATABASE FOR
+% THE TRUCK MODEL
+
 % Copyright 2019-2024 The MathWorks, Inc.
 
 %% Vehicle-level data
 %   Vehicle Name         #Axles  Wheel Radius (m)    Init Z-Offset (m)
 
 disp(['Generating DDatabase from ' mfilename]);
-
-%% Default Driver - Sedan Hamba
-veh_name = 'Sedan_Hamba';
-drv.Lateral.NForward.Value          = 1;          % (no units) 
-drv.Lateral.NReverse.Value          = 2.5;        % (no units)
-drv.Lateral.xWheelbase.Value        = 2.824;      % m
-drv.Lateral.aMaxSteer.Value         = 80;         % deg
-drv.Lateral.fSteerCutoff.Value      = 314.159265; % rad/s
-
-drv.Long.mVehicle.Value             = 1500;       % kg
-drv.Long.FTractive.Value            = 17297;      % N
-drv.Long.tDriver.Value              = 0.1;        % s
-drv.Long.xPreview.Value             = 20;         % s
-drv.Long.NDragRoll.Value            = 200;        % N       
-drv.Long.NDragRollDriveline.Value   = 2.5;        % N/(m/s)
-drv.Long.NDragAero.Value            = 0;          % N/(m^2/s^2)
-drv.Long.gGravity.Value             = 9.80665;       % m/s^2
-drv.Long.fAccelCutoff.Value         = 31.4159265; % 1/s
-drv.Long.fBrakeCutoff.Value         = 31.4159265; % 1/s
-
-drv.drvCycle.Long.Ki.Value          = 0;          % 1/s
-drv.drvCycle.Long.Kp.Value          = 1;          % 1/s
-drv.drvCycle.Filter.Reference.Value = 10.0;       % Hz
-drv.drvCycle.Filter.Measured.Value  = 125.6637;      % Hz
-
-Driver.(veh_name) = drv;
-clear drv
-
-%% Default Driver - FSAE Achilles
-veh_name = 'FSAE_Achilles';
-drv.Lateral.NForward.Value          = 1;          % (no units) 
-drv.Lateral.NReverse.Value          = 2.5;        % (no units)
-drv.Lateral.xWheelbase.Value        = 1.53;      % m
-drv.Lateral.aMaxSteer.Value         = 80;         % deg
-drv.Lateral.fSteerCutoff.Value      = 314.159265; % rad/s
-
-drv.Long.mVehicle.Value             = 200;       % kg
-drv.Long.FTractive.Value            = 17297;      % N
-drv.Long.tDriver.Value              = 0.05;       % s
-drv.Long.xPreview.Value             = 20;         % s
-drv.Long.NDragRoll.Value            = 200;        % N       
-drv.Long.NDragRollDriveline.Value   = 2.5;        % N/(m/s)
-drv.Long.NDragAero.Value            = 0;          % N/(m^2/s^2)
-drv.Long.gGravity.Value             = 9.80665;       % m/s^2
-drv.Long.fAccelCutoff.Value         = 31.4159265; % 1/s
-drv.Long.fBrakeCutoff.Value         = 31.4159265; % 1/s
-
-drv.drvCycle.Long.Ki.Value          = 0;          % 1/s
-drv.drvCycle.Long.Kp.Value          = 1;          % 1/s
-drv.drvCycle.Filter.Reference.Value = 10.0;       % Hz
-drv.drvCycle.Filter.Measured.Value  = 125.6637;      % Hz
-
-Driver.(veh_name) = drv;
-clear drv
-
-%% Default Driver - Sedan HambaLG
-veh_name = 'Sedan_HambaLG';
-drv.Lateral.NForward.Value  = 1;          % (no units) 
-drv.Lateral.NReverse.Value  = 2.5;        % (no units)
-drv.Lateral.xWheelbase.Value      = 3.57;      % m
-drv.Lateral.aMaxSteer.Value       = 80;         % deg
-drv.Lateral.fSteerCutoff.Value    = 314.159265; % rad/s
-
-drv.Long.mVehicle.Value           = 2550;       % kg
-drv.Long.FTractive.Value          = 17297;      % N
-drv.Long.tDriver.Value            = 0.1;        % s
-drv.Long.xPreview.Value           = 20;         % s
-drv.Long.NDragRoll.Value          = 200;        % N       
-drv.Long.NDragRollDriveline.Value = 2.5;        % N/(m/s)
-drv.Long.NDragAero.Value          = 0;          % N/(m^2/s^2)
-drv.Long.gGravity.Value           = 9.80665;       % m/s^2
-drv.Long.fAccelCutoff.Value       = 31.4159265; % 1/s
-drv.Long.fBrakeCutoff.Value       = 31.4159265; % 1/s
-
-drv.drvCycle.Long.Ki.Value          = 0;          % 1/s
-drv.drvCycle.Long.Kp.Value          = 1;          % 1/s
-drv.drvCycle.Filter.Reference.Value = 10.0;       % Hz
-drv.drvCycle.Filter.Measured.Value  = 125.6637;      % Hz
-
-Driver.(veh_name) = drv;
-clear drv
-
-%% Default Driver - Bus Makhulu, Bus Makhulu 3 Axle
-veh_name = 'Bus_Makhulu';
-drv.Lateral.NForward.Value          = 1;          % (no units) 
-drv.Lateral.NReverse.Value          = 2.5;        % (no units)
-drv.Lateral.xWheelbase.Value        = 6.7816;     % m
-drv.Lateral.aMaxSteer.Value         = 55;         % deg
-drv.Lateral.fSteerCutoff.Value      = 314.159265; % rad/s
-
-drv.Long.mVehicle.Value             = 2550;       % kg
-drv.Long.FTractive.Value            = 17297;      % N
-drv.Long.tDriver.Value              = 0.1;        % s
-drv.Long.xPreview.Value             = 20;         % s
-drv.Long.NDragRoll.Value            = 200;        % N       
-drv.Long.NDragRollDriveline.Value   = 2.5;        % N/(m/s)
-drv.Long.NDragAero.Value            = 0;          % N/(m^2/s^2)
-drv.Long.gGravity.Value             = 9.80665;       % m/s^2
-drv.Long.fAccelCutoff.Value         = 31.4159265; % 1/s
-drv.Long.fBrakeCutoff.Value         = 31.4159265; % 1/s
-
-drv.drvCycle.Long.Ki.Value          = 0;          % 1/s
-drv.drvCycle.Long.Kp.Value          = 1;          % 1/s
-drv.drvCycle.Filter.Reference.Value = 10.0;       % Hz
-drv.drvCycle.Filter.Measured.Value  = 125.6637;      % Hz
-
-Driver.(veh_name) = drv;
-clear drv
 
 %% Default Driver - Truck Amandla
 veh_name = 'Truck_Amandla';
@@ -167,7 +62,7 @@ cl_manv_longOnly = {...
     'DriveCycle_FTP75';
     'DriveCycle_UrbanCycle1'};
 
-%% Assemble database of drivers - closed loop Long + Lat
+%% Assemble database of drivers - closed loop Longitudinal + Lateral
 
 % Get list of maneuver names (long + lat)
 Mnames = cl_manv_longLat;

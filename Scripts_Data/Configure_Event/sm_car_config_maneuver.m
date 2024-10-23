@@ -17,12 +17,7 @@ veh_config_set = strsplit(veh_config,'_');
 veh_body =  lower(veh_config_set{1});
 
 switch veh_body
-    case 'hamba',        veh_inst = 'Sedan_Hamba';   init_inst = 'Sedan_Hamba';
-    case 'hambalg',      veh_inst = 'Sedan_HambaLG'; init_inst = 'Sedan_HambaLG';
     case 'amandla3axle', veh_inst = 'Truck_Amandla'; init_inst = 'Truck_Amandla';
-    case 'makhulu',      veh_inst = 'Bus_Makhulu';   init_inst = 'Bus_Makhulu';
-    case 'makhulu3axle', veh_inst = 'Bus_Makhulu';   init_inst = 'Bus_Makhulu_Axle3';
-    case 'achilles',     veh_inst = 'FSAE_Achilles'; init_inst = 'FSAE_Achilles';
     otherwise
         error(['Vehicle type ' veh_body ' not recognized.']);
 end
@@ -38,9 +33,6 @@ switch trl_body
 end
 
 maneuver_str = lower(maneuver);
-%if(~strcmpi(maneuver,'default'))
-%    maneuver_str =  lower([maneuver ' ' veh_body]);
-%end
 
 % Assume no road surface height change
 set_param([modelname '/Road/Road Surface Height'],'LabelModeActiveChoice','None');
@@ -60,7 +52,6 @@ set_param([modelname '/World'],'popup_gravity','Constant');
 
 % Assume no constrants on vehicle
 set_param([modelname '/Vehicle/Vehicle Constraint'],'LabelModeActiveChoice','NoConstraint');
-
 
 % Assume all points on trajectory will be checked
 set_param([modelname '/Driver/Closed Loop/Maneuver'],'popup_window','No');

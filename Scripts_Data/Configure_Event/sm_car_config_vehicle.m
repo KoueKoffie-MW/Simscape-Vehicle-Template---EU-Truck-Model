@@ -20,8 +20,7 @@ if(bdIsLoaded(mdl))
         set_param(h(i),'InitTriggerDropdown','1');
     end
     
-    % Other config settings based on Vehicle type
-    
+    % Other config settings based on Vehicle type 
     solverType = get_param(mdl,'SolverType');
     Vehicle = evalin('base','Vehicle');
     powertrain_class = Vehicle.Powertrain.Power.class.Value;

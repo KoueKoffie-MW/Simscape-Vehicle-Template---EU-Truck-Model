@@ -5,21 +5,16 @@ function sm_car_gen_init_database
 % Copyright 2019-2022 The MathWorks, Inc.
 
 %% Vehicle-level data
-%   Vehicle Name         #Axles  Wheel Radius (m)    Init Z-Offset (m)
+
 
 disp(['Generating IDatabase from ' mfilename]);
 
+%   Vehicle Name       #Axles  Wheel Radius (m)   Init Z-Offset (m)
 vehicle_data = {...
-    'Sedan_Hamba',       2       0.35                0.025;
-    'Sedan_HambaLG',     2       0.4225              0.06;
-    'FSAE_Achilles',     2       0.23323             0;
-    'Bus_Makhulu',       2       0.4640              0;
-    'Bus_Makhulu_Axle3', 3       0.4640              0;
     'Truck_Amandla',     3       0.6731              0;
-    'Trailer_Kumanzi',   2       0.6731              0;
-    'Trailer_Thwala',    1       0.2660              0;
-    'Trailer_Elula',     1       0.3500              0
-    };
+    'Trailer_Kumanzi',   2       0.6731              0};
+
+%% In the next steps, the model will set for each vehicle scenario the speed and position fo the wheel
 
 %% Scene Flat Surface, Slow Start
 InitSet.Flat.Type      = 'Flat';
@@ -185,12 +180,7 @@ InitSet.RDF_Plateau.Data         = {...
 InitSet.Double_Lane_Change.Type   = 'Double_Lane_Change';
 InitSet.Double_Lane_Change.Instance     = '';
 
-% Adjustments due to Unreal scene change in R2022b
-if(verLessThan('matlab','9.13'))
-    sChassisY = -3.35;
-else
-    sChassisY = -3.35-2.5;
-end
+sChassisY = -3.35-2.5;
 
 InitSet.Double_Lane_Change.Data         = {...
     'aChassis','rad', 0,   0,     0;
