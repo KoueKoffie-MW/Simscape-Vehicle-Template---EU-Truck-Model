@@ -27,16 +27,16 @@ drive_h    = Simulink.findBlocks(modelname,'popup_driver_type','.*',f);
 if strcmp(maneuver,'wot braking')
 % 1) Set the maneuver characteristics
     % Brake pedal position (0-1) over time (in sec) 
-    Maneuver.Brake.t.Value      = [0 11 11.2 190 191 200];
-    Maneuver.Brake.rPedal.Value = [0 0 1 1 0 0];
+    Maneuver.Brake.t.Value      = [0 16 16.2 190 191 200];
+    Maneuver.Brake.rPedal.Value = [0 0  1    1   0   0];
     
     % Steering position angle (rad) over the time (sec)
-    Maneuver.Steer.t.Value      = [0 11 11.2 100 150 200];
-    Maneuver.Steer.aWheel.Value = [0 0 0 0 0 0];
+    Maneuver.Steer.t.Value      = [0 200];
+    Maneuver.Steer.aWheel.Value = [0 0];
     
     % Acceleration pedal position (0-1) over time (in sec) 
-    Maneuver.Accel.t.Value = [0 1 1.2 10 10.2 200];
-    Maneuver.Accel.rPedal.Value = [0 0 1 1 0 0];
+    Maneuver.Accel.t.Value      = [0 1 1.2 15 15.2 200];
+    Maneuver.Accel.rPedal.Value = [0 0 1   1  0    0];
     
 % 2) Select the initial position of the truck AND trailer
     Init.Chassis.aChassis.Value = [0,0,0]; % Start angle of the Vehicle COG in rad [Roll,Pitch,Yaw]

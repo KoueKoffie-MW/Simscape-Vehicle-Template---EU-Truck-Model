@@ -57,6 +57,6 @@ cd(fileparts(which('sm_car_Axle3.slx')))
 setup_Scenario
 
 %% Modify solver settings - patch from development
-limitDerivativePerturbations()
-daesscSetMultibody()
+% limitDerivativePerturbations()
+% daesscSetMultibody()
 end

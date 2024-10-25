@@ -6,7 +6,7 @@
 % variable altitude loaded using a CRG file
 
 %% Inputs: 
-roadSurface = 'plane'; % Choose 'plane' or 'CRG'
+roadSurface = 'CRG'; % Choose 'plane' or 'CRG'
 
 % If the model is not open, then open it
 if ~bdIsLoaded('sm_car_Axle3'); open_system('sm_car_Axle3'); end
@@ -28,6 +28,7 @@ end
 % Simulate
 sim(bdroot);
 
-% Postprocessing 
+% Post-processing 
 sm_car_plot3maneuver(Maneuver,logsout_sm_car);
 
+sm_car_plot1speed
