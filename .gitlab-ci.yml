@@ -1,0 +1,10 @@
+stages:
+  - testModels
+
+Example1:
+  stage: testModels
+  tags: 
+    - on-prem
+  script:
+    - mw -using BR2024ad matlab -batch "project = openProject('SVT_Truck.prj'); ci.testExmp1;"
+
