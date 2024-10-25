@@ -3,16 +3,11 @@ function testExmp1()
 % on the repository directly in Gitlab
 
 % First run the script for example 1 to see if it works:
-disp('Running Example 1')
 setupWideOpenBraking;
 disp('Example 1: Live script run without any problem')
 
-% Now test also with CRG
-sm_car_config_road('sm_car_Axle3','crg rough road');
-sim('sm_car_Axle3');
-disp('Example 1: Second stage passed')
+setupDoubleLaneChange;
+disp('Example 2: Live script run without any problem')
 
-
-bdclose;
-close all;
+bdclose
 end

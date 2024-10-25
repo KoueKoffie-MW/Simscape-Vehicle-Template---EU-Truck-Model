@@ -2,9 +2,22 @@ stages:
   - testModels
 
 Example1:
-  stage: testModels
+  stage: testWOT
   tags: 
     - on-prem
   script:
     - mw -using BR2024ad matlab -batch "project = openProject('SVT_Truck.prj'); ci.testExmp1;"
 
+Example2:
+  stage: testDLC
+  tags: 
+    - on-prem
+  script:
+    - mw -using BR2024ad matlab -batch "project = openProject('SVT_Truck.prj'); ci.testExmp2;"
+
+Example1:
+  stage: testSDD
+  tags: 
+    - on-prem
+  script:
+    - mw -using BR2024ad matlab -batch "project = openProject('SVT_Truck.prj'); ci.testExmp3;"
