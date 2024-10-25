@@ -25,7 +25,10 @@ switch roadSurface
         sm_car_config_road(bdroot,'crg rough road');
 end
 
-% Simulate
+% For this configuration the Driving Scenario is not activated
+set_param([bdroot,'/Scenario Interpreter'], 'LabelModeActiveChoice','None');
+
+% Simulate the model
 sim(bdroot);
 
 % Post-processing 

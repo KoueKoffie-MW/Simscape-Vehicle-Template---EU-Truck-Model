@@ -15,7 +15,8 @@ function startup_sm_car
 
 %% 1) Open the model
 % Please note that the simulink model also has some callbacks
-sm_car_Axle3
+modelname = 'sm_car_Axle3';
+open_system(modelname);
 
 %% Load the Vehicle and Truck Parameters
 % Parameters for the Vehicle
@@ -27,7 +28,7 @@ load('Trailer.mat');
 assignin('base','Trailer',Trailer);
 
 %% Initial Positions:
-[Maneuver, Init, Init_Trailer, Driver] = sm_car_config_maneuver(bdroot,'wot braking');
+[Maneuver, Init, Init_Trailer, Driver] = sm_car_config_maneuver(modelname,'wot braking');
 
 % Assign the function to the MATLAB Workspace
 assignin('base','Maneuver',Maneuver);
