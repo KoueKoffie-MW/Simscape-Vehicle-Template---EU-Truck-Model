@@ -21,7 +21,6 @@ Vehicle = evalin('base','Vehicle');
 roadFile  = 'which(''TNO_FlatRoad.rdf'')';
 assignin('base','Vehicle',Vehicle);
 
-% VDatabase = evalin('base','VDatabase');
 trailer_var = get_param([modelname '/Vehicle/Trailer/Trailer'],'Vehicle');
 Trailer = evalin('base',trailer_var);
 

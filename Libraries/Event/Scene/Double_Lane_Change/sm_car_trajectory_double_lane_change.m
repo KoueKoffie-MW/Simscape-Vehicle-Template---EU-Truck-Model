@@ -6,11 +6,8 @@ cd(fileparts(which(mfilename)))
 % Parameters for trajectory
 
 % Adjustments due to Unreal scene change in R2022b
-if(verLessThan('matlab','9.13'))
-    maneuver_lateral_offset    = -3.35; % m
-else
-    maneuver_lateral_offset    = -3.35-2.5; % m
-end
+maneuver_lateral_offset    = -3.35-2.5; % m
+
 cone_set_lat_separation    = 4.2;   % m
 
 % Longitudinal gate locations (m)
@@ -95,11 +92,6 @@ yaw_interval = 2; % 10
 aYaw_new = atan2(...
     y_new(yaw_interval+1:end)-y_new(1:end-yaw_interval),...
     x_new(yaw_interval+1:end)-x_new(1:end-yaw_interval));
-
-%aYaw_new = atan2(...
-%    y_new(yaw_interval+1:end)-y_new(1:end-yaw_interval),...
-%    x_new(yaw_interval+1:end)-x_new(1:end-yaw_interval));
-
 
 aYaw_new = [repmat(aYaw_new(1),1,yaw_interval) aYaw_new];
 

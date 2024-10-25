@@ -3,25 +3,35 @@ function startup_sm_car
 % Copyright 2019-2023 The MathWorks, Inc.
 % Function adapted by Lorenzo Nicoletti to reduce the truck model
 
-%curr_proj = simulinkproject;
-
-% Add folders with Simscape Multibody tire subsystem to path if MATLAB version R2021b or higher
-%addpath([curr_proj.RootFolder filesep 'Libraries' filesep 'Vehicle' filesep 'Tire' filesep 'MFMbody' filesep 'MFMbody']);
-
 %% Load visualization and other parameters in workspace
 Visual = sm_car_param_visual('default');
 assignin('base','Visual',Visual);
 
 %% Create .mat files with Vehicle structure presets
-evalin('base','Vehicle_data_LKW')
-evalin('base','TrailerLKW');
-evalin('base','Init_TrailerLKW');
+% evalin('base','Vehicle_data_LKW')
+load('Vehicle.mat');
+assignin('base','Vehicle',Vehicle);
+
+%  evalin('base','TrailerLKW');
+% evalin('base','Init_TrailerLKW');
+load('Trailer.mat');
+assignin('base','Trailer',Trailer);
 
 %% Load Initial Vehicle state database
-evalin('base','Init_data_LKW')
+% evalin('base','Init_data_LKW')
+
+%% Initial Positions:
+% This function loads a series of initial position for different use-cases
+sm_car_gen_init_database;
+
+% Select the correct start point for the trailer: 
+evalin('base','Init_Trailer = IDatabase.Flat.Trailer_Kumanzi;');
+
+% Assign start position of the truck
+evalin('base','Init=IDatabase.Flat.Truck_Amandla');
+
 
 %% Load Maneuver database
-sm_car_gen_init_database;
 load('MDatabase_file.mat');
 eval(['db_structure = ' 'MDatabase'  ';']);
 assignin('base','MDatabase',db_structure);

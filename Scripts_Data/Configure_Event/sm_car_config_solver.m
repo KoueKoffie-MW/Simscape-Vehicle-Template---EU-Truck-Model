@@ -47,7 +47,6 @@ else
             'LocalSolverChoice',realtime_localSolver,...
             'LocalSolverSampleTime',realtime_stepSize);
     end
-    %Vehicle = sm_car_vehcfg_setTireSolver(Vehicle,'fixed');
     
     if(endsWith(simtype,'slrt'))
         % For use with Simulink Real-Time, turn warnings off
