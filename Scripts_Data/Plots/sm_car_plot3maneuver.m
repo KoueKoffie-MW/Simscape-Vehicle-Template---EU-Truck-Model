@@ -1,45 +1,28 @@
-function sm_car_plot3maneuver(Maneuver,sim_results)
-% Function to plot key parameters of predefined maneuver
-% Copyright 2018-2023 The MathWorks, Inc.
+function sm_car_plot3maneuver(Maneuver,logsout_sm_car)
+%% Description: 
+% This function plots the driven maneuver that can be an open-loop or a
+% closed-loop simulation (in this case we assign a trajectoryory to be followed).
+% The function distinguishes between the two cases.
 
-% Prepare first figure and handle
-fig_handle_name =   'h1_sm_car_maneuver';
+%% Input: 
+% logsout_sm_car: This is the element containing the Simulink Logging
 
-handle_var = evalin('base',['who(''' fig_handle_name ''')']);
-if(isempty(handle_var))
-    evalin('base',[fig_handle_name ' = figure(''Name'', ''' fig_handle_name ''');']);
-elseif ~isgraphics(evalin('base',handle_var{:}))
-    evalin('base',[fig_handle_name ' = figure(''Name'', ''' fig_handle_name ''');']);
-end
-figure(evalin('base',fig_handle_name))
-clf(evalin('base',fig_handle_name))
-temp_colororder = get(gca,'defaultAxesColorOrder');
-
-% Handle single simulation output or logsout directly
-fieldnames_res = sim_results.getElementNames;
-if(find(contains(fieldnames_res,'logsout_sm_car')))
-    logsout_sm_car = sim_results.get('logsout_sm_car');
-else
-    logsout_sm_car = sim_results;
-end
-
+%% Implementation
 % Check type of maneuver
 fieldlist     = fieldnames(Maneuver);
 hasTrajectory = find(strcmp(fieldlist,'Trajectory'), 1);
 hasDriveCycle = find(strcmp(fieldlist,'DriveCycle'), 1);
 
+% CASE 1: There is a trajectory - CLOSED LOOP Simulation
 if(~isempty(hasTrajectory))
     
-    axis('equal'); 
-    
+    %% Plot trajectory
     % Extract results
     logsout_VehBus = logsout_sm_car.get('VehBus');
-    logsout_xCar = logsout_VehBus.Values.World.x;
-    logsout_yCar = logsout_VehBus.Values.World.y;
-    
-    logsout_vx   = logsout_VehBus.Values.Chassis.Body.CG.vx;
-    logsout_aYaw = logsout_VehBus.Values.World.aYaw;
-    
+    logsout_xCar   = logsout_VehBus.Values.World.x;
+    logsout_yCar   = logsout_VehBus.Values.World.y;    
+    logsout_vx     = logsout_VehBus.Values.Chassis.Body.CG.vx;
+    logsout_aYaw   = logsout_VehBus.Values.World.aYaw;   
     logsout_DrvBus = logsout_sm_car.get('DrvBus');
     logsout_dist   = logsout_DrvBus.Values.Reference.dist;
     logsout_ref_vx = logsout_DrvBus.Values.Reference.vTarget;
@@ -49,23 +32,12 @@ if(~isempty(hasTrajectory))
     plot(Maneuver.Trajectory.x.Value,Maneuver.Trajectory.y.Value,'LineWidth',1.5,'Color','b','DisplayName','Commnad');
     hold on; grid on
     plot(logsout_xCar.Data, logsout_yCar.Data, 'LineWidth', 1.5,'LineStyle','--','Color','r');
-    hold off
-    axis equal
+    hold off; axis equal
 
     % Set axes title:
     xlabel('Global X (m)');  ylabel('Global Y (m)'); title('Trajectory (Global X, Y)');
     
-    % Prepare second figure handle
-    fig_handle_name = 'h2_sm_car_maneuver';
-    handle_var = evalin('base',['who(''' fig_handle_name ''')']);
-    if(isempty(handle_var))
-        evalin('base',[fig_handle_name ' = figure(''Name'', ''' fig_handle_name ''');']);
-    elseif ~isgraphics(evalin('base',handle_var{:}))
-        evalin('base',[fig_handle_name ' = figure(''Name'', ''' fig_handle_name ''');']);
-    end
-    figure(evalin('base',fig_handle_name))
-    clf(evalin('base',fig_handle_name))
-    
+    %% Plot trajectory
     ah(1) = subplot(211);
     plot(logsout_dist.Data,logsout_ref_vx.Data,'-o');
     hold on
