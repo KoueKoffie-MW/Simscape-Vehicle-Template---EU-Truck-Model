@@ -2,7 +2,6 @@ function sm_car_plot3maneuver(Maneuver,sim_results)
 % Function to plot key parameters of predefined maneuver
 % Copyright 2018-2023 The MathWorks, Inc.
 
-
 % Prepare first figure and handle
 fig_handle_name =   'h1_sm_car_maneuver';
 
@@ -25,36 +24,14 @@ else
 end
 
 % Check type of maneuver
-fieldlist = fieldnames(Maneuver);
+fieldlist     = fieldnames(Maneuver);
 hasTrajectory = find(strcmp(fieldlist,'Trajectory'), 1);
 hasDriveCycle = find(strcmp(fieldlist,'DriveCycle'), 1);
 
 if(~isempty(hasTrajectory))
     
-    Scene = evalin('base','Scene');
-    hasTrack = true;
-    if(startsWith(lower(Maneuver.Type),'crg_'))
-        ctrline = Scene.(Maneuver.Type).Geometry.centerline.xyz(:,1:2);
-        w = Scene.(Maneuver.Type).Geometry.w;
-    elseif(isfield(Scene.(Maneuver.Type),'Track'))
-        ctrline = Scene.(Maneuver.Type).Track.ctrline;
-        w = Scene.(Maneuver.Type).Track.w;
-    else
-    hasTrack = false;
-    end
-    if(hasTrack)
-    [xy_data] = sm_car_road_track_extrusion(ctrline,w);
-    patch(xy_data(:,1),xy_data(:,2),[1 1 1]*0.90,'EdgeColor','none');
-    hold on
-    h2 = plot(xy_data(:,1),xy_data(:,2),'-','Marker','o','MarkerSize',1,'LineWidth',1);
-    h3 = plot(ctrline(:,1),ctrline(:,2),'--','MarkerSize',1,'LineWidth',1);
-    legend([h2 h3],{'Track','Center Line'},'Location','Best')
-    end
-    %hold off
-    box on
-    axis('equal');
+    axis('equal'); 
     
-    % Plot results for systems with a defined trajectory
     % Extract results
     logsout_VehBus = logsout_sm_car.get('VehBus');
     logsout_xCar = logsout_VehBus.Values.World.x;
@@ -62,33 +39,21 @@ if(~isempty(hasTrajectory))
     
     logsout_vx   = logsout_VehBus.Values.Chassis.Body.CG.vx;
     logsout_aYaw = logsout_VehBus.Values.World.aYaw;
-    logsout_xBody = [0;cumsum(sqrt((diff(logsout_xCar.Data)).^2+diff(logsout_yCar.Data).^2))];
     
     logsout_DrvBus = logsout_sm_car.get('DrvBus');
     logsout_dist   = logsout_DrvBus.Values.Reference.dist;
-    logsout_ref_ayaw = logsout_DrvBus.Values.Reference.ayaw;
-    logsout_ref_vx   = logsout_DrvBus.Values.Reference.vTarget;
+    logsout_ref_vx = logsout_DrvBus.Values.Reference.vTarget;
     
+    % Plot the trajectory
     ayaw_ref = interp1(Maneuver.Trajectory.xTrajectory.Value,Maneuver.Trajectory.aYaw.Value,logsout_dist.Data);
-    h4=plot(Maneuver.Trajectory.x.Value,Maneuver.Trajectory.y.Value,'-o','MarkerSize',4,'Color',temp_colororder(4,:));
-    hold on
-    h5=plot(logsout_xCar.Data, logsout_yCar.Data, 'LineWidth', 1,'Color',temp_colororder(3,:));
+    plot(Maneuver.Trajectory.x.Value,Maneuver.Trajectory.y.Value,'LineWidth',1.5,'Color','b','DisplayName','Commnad');
+    hold on; grid on
+    plot(logsout_xCar.Data, logsout_yCar.Data, 'LineWidth', 1.5,'LineStyle','--','Color','r');
     hold off
     axis equal
-    xlabel('Global X (m)');
-    ylabel('Global Y (m)');
-    title('Trajectory (Global X, Y)');
-    
-    label_str = sprintf('Maneuver: %s\nData: %s',...
-        strrep(Maneuver.Type,'_',' '),...
-        strrep(Maneuver.Instance,'_',' '));
-    text(0.05,0.9,label_str,...
-        'Units','Normalized','Color',[1 1 1]*0.5);
-    if(~isempty(hasTrajectory) && hasTrack)
-        legend([h2 h3 h4 h5],{'Track','Center Line','Reference','Measured'},'Location','Best')
-    else
-        legend({'Reference','Measured'},'Location','Best');
-    end
+
+    % Set axes title:
+    xlabel('Global X (m)');  ylabel('Global Y (m)'); title('Trajectory (Global X, Y)');
     
     % Prepare second figure handle
     fig_handle_name = 'h2_sm_car_maneuver';
@@ -110,11 +75,6 @@ if(~isempty(hasTrajectory))
     xlabel('Distance Traveled (m)');
     ylabel('Speed (m/s)');
     
-    text(0.9,0.15,label_str,...
-        'Units','Normalized','Color',[1 1 1]*0.5,...
-        'HorizontalAlignment','right');
-    legend({'Reference','Measured'},'Location','Best');
-    
     ah(2) = subplot(212);
     plot(logsout_dist.Data,ayaw_ref,'-o');
     hold on
@@ -124,6 +84,7 @@ if(~isempty(hasTrajectory))
     if(isempty(lapind))
         lapind = length(logsout_dist.Data);
     end
+    
     % Calculate an offset to keep heading angle in a 2*pi range
     % Determine if offset increases or decreases each lap
     yawUnwrap = unwrap(logsout_aYaw.Data);
@@ -173,11 +134,7 @@ if(~isempty(hasTrajectory))
     hold off
     title('Target Speed vs. Time');
     ylabel('Speed (m/s)');
-    
-    text(0.9,0.15,label_str,...
-        'Units','Normalized','Color',[1 1 1]*0.5,...
-        'HorizontalAlignment','right');
-    legend({'Reference','Measured'},'Location','Best');
+   
     
     ah3(2) = subplot(212);
     plot(logsout_dist.Time,ayaw_ref,'-o');
@@ -206,15 +163,6 @@ elseif(~isempty(hasDriveCycle))
     title('Target Speed Along Trajectory');
     xlabel('Distance Traveled (m)');
     ylabel('Speed (m/s)');
-
-    config_str = evalin('base','Vehicle.config');
-    label_str = sprintf('Drive Cycle: %s\nVehicle: %s',...
-        strrep(Maneuver.Instance,'_',' '),...
-        strrep(config_str,'_','\_'));
-
-    text(0.9,0.1,label_str,...
-        'Units','Normalized','Color',[1 1 1]*0.5,...
-        'HorizontalAlignment','right');
     legend({'Reference','Measured'},'Location','NorthWest');
 
 else
@@ -255,11 +203,6 @@ else
     
     subplot(311)
     linkaxes(ah, 'x')
-    label_str = sprintf('Maneuver: %s\nData: %s',...
-        strrep(Maneuver.Type,'_',' '),...
-        strrep(Maneuver.Instance,'_',' '));
-    text(0.05,0.2,label_str,...
-        'Units','Normalized','Color',[1 1 1]*0.5);
     set(ah(1),'XLim',[logsout_aSteerWheel.Time(1) logsout_aSteerWheel.Time(end)]);
 end
 

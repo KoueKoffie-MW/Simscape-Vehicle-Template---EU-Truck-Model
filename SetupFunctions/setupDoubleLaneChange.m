@@ -1,13 +1,11 @@
 %% Description: 
-% This script shows how to set up a wide open braking test and how to then
+% This script shows how to set up a wide open throttle test and how to then
 % simulate it. The wide open throttle test is set as an Open Loop
 % Simulation meaning that the driver controller is not used. The user can
 % choose whether to simulate with a flat surface or with a surface with
 % variable altitude loaded using a CRG file
 
 %% Inputs: 
-roadSurface = 'CRG'; % Choose 'plane' or 'CRG'
-
 % If the model is not open, then open it
 if ~bdIsLoaded('sm_car_Axle3'); open_system('sm_car_Axle3'); end
 
@@ -15,20 +13,14 @@ if ~bdIsLoaded('sm_car_Axle3'); open_system('sm_car_Axle3'); end
 if ~exist('Camera','var'); startup_sm_car; end
 
 % Configure the maneuver: Set initial position, maneuver characteristics, and driver 
-[Maneuver, Init, Init_Trailer, Driver] = sm_car_config_maneuver('sm_car_Axle3','wot braking');
+[Maneuver, Init, Init_Trailer, Driver] = sm_car_config_maneuver('sm_car_Axle3','double lane change');
 
-% Set up the road surface
-switch roadSurface
-    case 'plane'
-        sm_car_config_road(bdroot,'plane grid');
-    case 'CRG'
-        sm_car_config_road(bdroot,'crg rough road');
-end
+% Set the road type to be used
+sm_car_config_road('sm_car_Axle3','Double Lane Change');
 
-% Simulate
+% Simulate the model
 sim(bdroot);
 
 % Post-processing 
 sm_car_plot3maneuver(Maneuver,logsout_sm_car);
-
 sm_car_plot1speed

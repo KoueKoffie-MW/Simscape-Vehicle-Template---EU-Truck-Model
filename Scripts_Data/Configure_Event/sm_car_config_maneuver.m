@@ -49,9 +49,6 @@ if strcmp(maneuver,'wot braking')
 
 % 4) Set simulation Stop time 
     set_param(modelname,'StopTime','40');
-
-% 5) Set the road type (e.g. Plane grid)
-    sm_car_config_road(modelname,'Plane Grid');
 end
 
 %% Double Lane Change Maneuver: These variables set up a DLC Maneuver for the vehicle
@@ -83,12 +80,9 @@ if strcmp(maneuver,'double lane change')
 
 % 4) Set simulation Stop time 
     set_param(modelname,'StopTime','40');
-
-% 5) Set the road type to be used
-    sm_car_config_road(modelname,'Double Lane Change');
 end
 
-% Inform the user if what he chose is not availbale:
+% Inform the user if what he chose is not available:
 if ~exist('Maneuver','var')
     disp('Error the maneuver you selected is not available');
     return

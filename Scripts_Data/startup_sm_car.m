@@ -35,6 +35,9 @@ assignin('base','Init',Init);
 assignin('base','Init_Trailer',Init_Trailer);
 assignin('base','Driver',Driver);
 
+%% Set the road option: Default Plane with constant height
+sm_car_config_road(modelname,'Plane Grid');
+
 %% Load Camera Frame Database
 CDatabase.Camera = sm_car_gen_camera_database;
 assignin('base','CDatabase',CDatabase)

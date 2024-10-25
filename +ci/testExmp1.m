@@ -3,12 +3,11 @@ function testExmp1()
 % on the repository directly in Gitlab
 
 % First run the script for example 1 to see if it works:
-controlledChargingExample;
+setupWideOpenBraking;
 disp('Example 1: Live script run without any problem')
 
-% After the first run, check the plot function and see if it runs smoothly
-controlledChargingPlotSOC; 
-disp('Example 1: Plot function run correctly')
+setupDoubleLaneChange;
+disp('Example 2: Live script run without any problem')
 
 bdclose
 end
