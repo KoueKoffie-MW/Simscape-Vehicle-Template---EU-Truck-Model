@@ -6,8 +6,6 @@ function sm_car_plot3maneuver(Maneuver,sim_results)
 % Prepare first figure and handle
 fig_handle_name =   'h1_sm_car_maneuver';
 
-Init_type = evalin('base','Init.Type');
-
 handle_var = evalin('base',['who(''' fig_handle_name ''')']);
 if(isempty(handle_var))
     evalin('base',[fig_handle_name ' = figure(''Name'', ''' fig_handle_name ''');']);
@@ -219,8 +217,6 @@ elseif(~isempty(hasDriveCycle))
         'HorizontalAlignment','right');
     legend({'Reference','Measured'},'Location','NorthWest');
 
-elseif(contains(lower(Init_type),'testrig_post'))
-    sm_car_plot5bodymeas
 else
     % Plot Maneuver with Open-Loop Driver Commands
     % Extract simulation results
