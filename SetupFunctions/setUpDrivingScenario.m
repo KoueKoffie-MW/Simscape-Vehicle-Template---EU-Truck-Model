@@ -1,11 +1,11 @@
 %% Description: 
-% This script shows how to set up a wide open throttle test and how to then
+% This script shows how to set up a wide open braking test and how to then
 % simulate it. The wide open throttle test is set as an Open Loop
 % Simulation meaning that the driver controller is not used. The user can
 % choose whether to simulate with a flat surface or with a surface with
 % variable altitude loaded using a CRG file
 
-%% Inputs: 
+%% Implementation
 % If the model is not open, then open it
 if ~bdIsLoaded('sm_car_Axle3'); open_system('sm_car_Axle3'); end
 
@@ -13,17 +13,13 @@ if ~bdIsLoaded('sm_car_Axle3'); open_system('sm_car_Axle3'); end
 if ~exist('Camera','var'); startup_sm_car; end
 
 % Configure the maneuver: Set initial position, maneuver characteristics, and driver 
-[Maneuver, Init, Init_Trailer, Driver] = sm_car_config_maneuver('sm_car_Axle3','wot braking');
+[Maneuver, Init, Init_Trailer, Driver] = sm_car_config_maneuver('sm_car_Axle3','double lane change');
 
-% Set the road type to be used
-sm_car_config_road('sm_car_Axle3','plane grid');
+% Correct the position of the chassis
+% Init.Chassis.sChassis
 
-% For this configuration the Driving Scenario is not activated
-set_param([bdroot,'/Scenario Interpreter'], 'LabelModeActiveChoice','None');
+% Set up the scenario interpreter
+sm_car_config_scenario_reader
 
 % Simulate the model
-sim(bdroot);
-
-% Post-processing 
-sm_car_plotmaneuver(Maneuver,logsout_sm_car);
-sm_car_plotspeed
+sim(bdroot,'StopTime', '40');

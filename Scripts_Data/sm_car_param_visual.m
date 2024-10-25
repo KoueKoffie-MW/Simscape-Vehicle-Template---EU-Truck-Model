@@ -57,8 +57,8 @@ Visual.emblem.data         = xy_data_membrane_data.xy_data_membrane;
 Visual.emblem.opc          = 1;
 
 Visual.PaceCar.emblem.data = xy_data_membrane_data.xy_data_membrane;
-Visual.PaceCar.emblem.opc  = 1;
-Visual.PaceCar.body.opc    = 0.1;
+Visual.PaceCar.emblem.opc  = 0;
+Visual.PaceCar.body.opc    = 0;
 
 %% Part Dimensions
 if(strcmpi(car_option,'default'))

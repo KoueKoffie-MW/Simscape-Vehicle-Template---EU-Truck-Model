@@ -1,4 +1,4 @@
-function sm_car_plot3maneuver(Maneuver,logsout_sm_car)
+function sm_car_plotmaneuver(Maneuver,logsout_sm_car)
 %% Description: 
 % This function plots the driven maneuver that can be an open-loop or a
 % closed-loop simulation (in this case we assign a trajectoryory to be followed).
@@ -37,7 +37,7 @@ if(~isempty(hasTrajectory))
     % Set axes title:
     xlabel('Global X (m)');  ylabel('Global Y (m)'); title('Trajectory (Global X, Y)');
     
-    %% Plot trajectory
+    %% Plot the other plots
     ah(1) = subplot(211);
     plot(logsout_dist.Data,logsout_ref_vx.Data,'-o');
     hold on
@@ -118,24 +118,6 @@ if(~isempty(hasTrajectory))
     ylabel('Yaw Angle (rad)');
     title('Target Yaw Angle vs Time');
     linkaxes(ah3, 'x')
-
-elseif(~isempty(hasDriveCycle))
-    % Plot results for systems with a defined trajectory
-    % Extract results
-    logsout_VehBus = logsout_sm_car.get('VehBus');
-    logsout_vx   = logsout_VehBus.Values.Chassis.Body.CG.vx;
-    
-    logsout_DrvBus = logsout_sm_car.get('DrvBus');
-    logsout_ref_vx   = logsout_DrvBus.Values.Reference.vTarget;
-
-    plot(logsout_ref_vx.Time,logsout_ref_vx.Data,'-o');
-    hold on
-    plot(logsout_vx.Time,logsout_vx.Data,'LineWidth',1);
-    hold off
-    title('Target Speed Along Trajectory');
-    xlabel('Distance Traveled (m)');
-    ylabel('Speed (m/s)');
-    legend({'Reference','Measured'},'Location','NorthWest');
 
 else
     % Plot Maneuver with Open-Loop Driver Commands

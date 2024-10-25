@@ -14,11 +14,11 @@ function startup_sm_car
 % Scene       : Parameters for the scene (e.g. road shape, cone position, etc.)
 
 %% 1) Open the model
-% Please note that the simulink model also has some callbacks
+% Please note that the Simulink model also has some callbacks
 modelname = 'sm_car_Axle3';
 open_system(modelname);
 
-%% Load the Vehicle and Truck Parameters
+%% 2) Load Vehicle and Trailer Parameter
 % Parameters for the Vehicle
 load('Vehicle.mat');
 assignin('base','Vehicle',Vehicle);
@@ -27,7 +27,7 @@ assignin('base','Vehicle',Vehicle);
 load('Trailer.mat');
 assignin('base','Trailer',Trailer);
 
-%% Initial Positions:
+%% 3) Set up a Maneuver, the Initial Position of the Vehicle and the Driver
 [Maneuver, Init, Init_Trailer, Driver] = sm_car_config_maneuver(modelname,'wot braking');
 
 % Assign the function to the MATLAB Workspace
@@ -58,9 +58,5 @@ ssc_build
 cd(fileparts(which('sm_car_Axle3.slx')))
 
 %% Additionally required for the Scenario Interpreter
-setup_Scenario
-
-%% Modify solver settings - patch from development
-% limitDerivativePerturbations()
-% daesscSetMultibody()
+sm_car_config_scenario_reader
 end

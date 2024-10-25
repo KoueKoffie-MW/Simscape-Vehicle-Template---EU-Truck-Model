@@ -5,21 +5,6 @@
 % vehicle speed, and steering input.
 %
 % Copyright 2018-2023 The MathWorks, Inc.
-
-% Check for simulation results
-if ~exist('logsout_sm_car', 'var')
-    error('logsout_sm_car data not available.')
-end
-
-
-% Reuse figure if it exists, else create new figure
-if ~exist('h1_sm_car', 'var') || ...
-        ~isgraphics(h1_sm_car, 'figure')
-    h1_sm_car = figure('Name', 'sm_car');
-end
-figure(h1_sm_car)
-clf(h1_sm_car)
-
 temp_colororder = get(gca,'defaultAxesColorOrder');
 
 % Get simulation results

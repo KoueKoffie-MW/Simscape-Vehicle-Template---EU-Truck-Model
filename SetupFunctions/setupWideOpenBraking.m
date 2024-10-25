@@ -6,7 +6,7 @@
 % variable altitude loaded using a CRG file
 
 %% Inputs: 
-roadSurface = 'CRG'; % Choose 'plane' or 'CRG'
+roadSurface = 'plane'; % Choose 'plane' or 'CRG'
 
 % If the model is not open, then open it
 if ~bdIsLoaded('sm_car_Axle3'); open_system('sm_car_Axle3'); end
@@ -20,18 +20,17 @@ if ~exist('Camera','var'); startup_sm_car; end
 % Set up the road surface
 switch roadSurface
     case 'plane'
-        sm_car_config_road(bdroot,'plane grid');
+        sm_car_config_road('sm_car_Axle3','plane grid');
     case 'CRG'
-        sm_car_config_road(bdroot,'crg rough road');
+        sm_car_config_road('sm_car_Axle3','crg rough road');
 end
 
 % For this configuration the Driving Scenario is not activated
-set_param([bdroot,'/Scenario Interpreter'], 'LabelModeActiveChoice','None');
+set_param(['sm_car_Axle3/Scenario Interpreter'], 'LabelModeActiveChoice','None');
 
 % Simulate the model
-sim(bdroot);
+sim('sm_car_Axle3');
 
 % Post-processing 
-sm_car_plot3maneuver(Maneuver,logsout_sm_car);
-
-sm_car_plot1speed
+sm_car_plotmaneuver(Maneuver,logsout_sm_car);
+sm_car_plotspeed
