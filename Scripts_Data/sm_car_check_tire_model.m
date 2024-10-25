@@ -4,12 +4,8 @@ function sm_car_check_tire_model(modelname)
 %
 % Copyright 2018-2023 The MathWorks, Inc.
 
-%if(verLessThan('matlab','9.10'))
-    evalin('base','warning off Simulink:Commands:FindSystemVariantsOptionRemoval');
-    f=Simulink.FindOptions('FollowLinks',1,'RegExp',1,'Variants','ActiveVariants');
-%else
-%    f=Simulink.FindOptions('FollowLinks',1,'RegExp',1,'MatchFilter',@Simulink.match.activeVariants);
-%end
+evalin('base','warning off Simulink:Commands:FindSystemVariantsOptionRemoval');
+f=Simulink.FindOptions('FollowLinks',1,'RegExp',1,'Variants','ActiveVariants');
 
 h=Simulink.findBlocks(modelname,'tireModelUnavailable','.*',f);
 

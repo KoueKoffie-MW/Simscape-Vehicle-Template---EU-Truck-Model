@@ -4,7 +4,19 @@ function [Maneuver, Init, Init_Trailer, Driver] = sm_car_config_maneuver(modelna
 % implemented here. The function is an alternative to avoid using Excel
 % Tables for generating the maneuvers. 
 
-% Radius of the wheels of both truck and trailer
+%% Input: 
+% modelname: The name of the model to be updated. which is sm_car_Axle3.slx
+% maneuver:  The maneuver you want to test. This code implements two options 'wot braking' or 'double lane change'
+
+%% Output:
+% Maneuver    : Contains the information of the maneuver that will be performed
+% Init        : initial position of the truck
+% Init_Trailer: Initial position and speed of the trailer
+% Driver      : Control parameter for driver model (only used if we have a closed loop case)
+
+%% Implementation
+
+% Radius of the wheels of both truck and trailer (needed to estimate intial wheel speed)
 radiusWheel = 0.6731; % in m
 
 % Find variant subsystems for settings
@@ -76,15 +88,20 @@ if strcmp(maneuver,'double lane change')
     sm_car_config_road(modelname,'Double Lane Change');
 end
 
+% Inform the user if what he chose is not availbale:
+if ~exist('Maneuver','var')
+    disp('Error the maneuver you selected is not available');
+    return
+end
+
 % From the initial conditions, set up also the speed of the wheels
 Init = sm_car_config_tire_speed(Init, radiusWheel,3);
 Init_Trailer = sm_car_config_tire_speed(Init_Trailer, radiusWheel,2);
 
 % For maneuver with a Closed Loop Model, a driver will be needed:
 Driver = sm_car_config_driver();
+
 end
-
-
 
 
 function Init = sm_car_config_tire_speed(Init, radiusWheel, numAxes)

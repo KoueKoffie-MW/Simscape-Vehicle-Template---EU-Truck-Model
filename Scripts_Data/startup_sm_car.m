@@ -1,45 +1,39 @@
 function startup_sm_car
-% Startup file for sm_car.slx Example
-% Copyright 2019-2023 The MathWorks, Inc.
-% Function adapted by Lorenzo Nicoletti to reduce the truck model
+%% Description:
+% This function is called when starting up the model and initializes it
+% with a wide open throttle scenario and a flat driving surface
 
-%% Load visualization and other parameters in workspace
-Visual = sm_car_param_visual('default');
-assignin('base','Visual',Visual);
+%% Following outputs will be placed in the MATLAB Workspace:
+% Maneuver    : Contains the information of the maneuver that will be performed
+% Init        : initial position of the truck
+% Init_Trailer: Initial position and speed of the trailer
+% Driver      : Control parameter for driver model (only used if we have a closed loop case)
+% Vehicle     : Contains vehicle parameters
+% Trailer     : Contains trailer parameters
+% Control     : Parameters for the controllers (except the driver)
+% Scene       : Parameters for the scene (e.g. road shape, cone position, etc.)
 
-%% Create .mat files with Vehicle structure presets
-% evalin('base','Vehicle_data_LKW')
+%% 1) Open the model
+% Please note that the simulink model also has some callbacks
+sm_car_Axle3
+
+%% Load the Vehicle and Truck Parameters
+% Parameters for the Vehicle
 load('Vehicle.mat');
 assignin('base','Vehicle',Vehicle);
 
-%  evalin('base','TrailerLKW');
-% evalin('base','Init_TrailerLKW');
+% Parameters for the trailer
 load('Trailer.mat');
 assignin('base','Trailer',Trailer);
 
-%% Load Initial Vehicle state database
-% evalin('base','Init_data_LKW')
-
 %% Initial Positions:
-% This function loads a series of initial position for different use-cases
-sm_car_gen_init_database;
+[Maneuver, Init, Init_Trailer, Driver] = sm_car_config_maneuver(bdroot,'wot braking');
 
-% Select the correct start point for the trailer: 
-evalin('base','Init_Trailer = IDatabase.Flat.Trailer_Kumanzi;');
-
-% Assign start position of the truck
-evalin('base','Init=IDatabase.Flat.Truck_Amandla');
-
-
-%% Load Maneuver database
-load('MDatabase_file.mat');
-eval(['db_structure = ' 'MDatabase'  ';']);
-assignin('base','MDatabase',db_structure);
-evalin('base','Maneuver = MDatabase.WOT_Braking.Truck_Amandla;');
-% evalin('base','Maneuver_LKW')
-
-%% Load Driver database
-sm_car_gen_driver_database;
+% Assign the function to the MATLAB Workspace
+assignin('base','Maneuver',Maneuver);
+assignin('base','Init',Init);
+assignin('base','Init_Trailer',Init_Trailer);
+assignin('base','Driver',Driver);
 
 %% Load Camera Frame Database
 CDatabase.Camera = sm_car_gen_camera_database;
@@ -59,13 +53,10 @@ cd(custom_code.folder)
 ssc_build
 cd(fileparts(which('sm_car_Axle3.slx')))
 
-%% Additionally required for the DSD subsystem:
+%% Additionally required for the Scenario Interpreter
 setup_Scenario
 
 %% Modify solver settings - patch from development
 limitDerivativePerturbations()
 daesscSetMultibody()
-
-sm_car_Axle3
-
 end
