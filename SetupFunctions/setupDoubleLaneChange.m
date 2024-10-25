@@ -26,4 +26,4 @@ sim(bdroot);
 
 % Post-processing 
 sm_car_plotmaneuver(Maneuver,logsout_sm_car);
-sm_car_plotspeed
+%sm_car_plotspeed
