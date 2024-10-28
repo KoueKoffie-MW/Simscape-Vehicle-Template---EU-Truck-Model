@@ -1,17 +1,18 @@
 function testExmp1()
-% This script was created for pipeline purposes to test the modification
-% on the repository directly in Gitlab
+%% Description:
+% Testing script to be used in the CI/CD Pipeline. Checks whether the WOT
+% scenario passes without any errors
 
 % First run the script for example 1 to see if it works:
-disp('Running Example 1')
+disp('Running WOT with plane road');
 setupWideOpenBraking;
-disp('Example 1: Live script run without any problem')
+disp('WOT with plane road passed');
 
 % Now test also with CRG
+disp('Running WOT with CRG road')
 sm_car_config_road('sm_car_Axle3','crg rough road');
 sim('sm_car_Axle3');
-disp('Example 1: Second stage passed')
-
+disp('WOT with CRG road passed');
 
 bdclose;
 close all;

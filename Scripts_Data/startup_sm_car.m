@@ -18,8 +18,11 @@ function startup_sm_car
 modelname = 'sm_car_Axle3';
 open_system(modelname);
 
+% Also open the main script with the model description:
+edit sm_car_Axle3_Example;
+
 %% 2) Load Vehicle and Trailer Parameter
-% Parameters for the Vehicle
+% Parameters for the vehicle
 load('Vehicle.mat');
 assignin('base','Vehicle',Vehicle);
 
@@ -28,6 +31,10 @@ load('Trailer.mat');
 assignin('base','Trailer',Trailer);
 
 %% 3) Set up a Maneuver, the Initial Position of the Vehicle and the Driver
+% The model is initialized with a simple WOT scenario. Deactivate the Road Runner scenario option
+set_param([modelname,'/Scenario Interpreter'], 'LabelModeActiveChoice','None');
+
+% Set up the parameters for the WOT scenario
 [Maneuver, Init, Init_Trailer, Driver] = sm_car_config_maneuver(modelname,'wot braking');
 
 % Assign the function to the MATLAB Workspace
@@ -41,7 +48,11 @@ sm_car_config_road(modelname,'Plane Grid');
 
 %% Load Camera Frame Database
 CDatabase.Camera = sm_car_gen_camera_database;
-assignin('base','CDatabase',CDatabase)
+assignin('base','Camera',CDatabase.Camera.Amandla)
+
+% Set up the visuals
+Visual = sm_car_param_visual('default');
+assignin('base','Visual',Visual);
 
 %% Load driving surface parameters
 Scene = sm_car_import_scene_data;
@@ -56,7 +67,4 @@ custom_code = dir('**/custom_abs.ssc');
 cd(custom_code.folder)
 ssc_build
 cd(fileparts(which('sm_car_Axle3.slx')))
-
-%% Additionally required for the Scenario Interpreter
-sm_car_config_scenario_reader
 end

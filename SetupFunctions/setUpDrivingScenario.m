@@ -15,9 +15,6 @@ if ~exist('Camera','var'); startup_sm_car; end
 % Configure the maneuver: Set initial position, maneuver characteristics, and driver 
 [Maneuver, Init, Init_Trailer, Driver] = sm_car_config_maneuver('sm_car_Axle3','double lane change');
 
-% Correct the position of the chassis
-% Init.Chassis.sChassis
-
 % Set up the scenario interpreter
 sm_car_config_scenario_reader
 

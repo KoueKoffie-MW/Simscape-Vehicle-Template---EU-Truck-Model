@@ -8,6 +8,7 @@
 %% Inputs: 
 roadSurface = 'plane'; % Choose 'plane' or 'CRG'
 
+%% Implementation
 % If the model is not open, then open it
 if ~bdIsLoaded('sm_car_Axle3'); open_system('sm_car_Axle3'); end
 
@@ -26,11 +27,11 @@ switch roadSurface
 end
 
 % For this configuration the Driving Scenario is not activated
-set_param(['sm_car_Axle3/Scenario Interpreter'], 'LabelModeActiveChoice','None');
+set_param('sm_car_Axle3/Scenario Interpreter', 'LabelModeActiveChoice','None');
 
 % Simulate the model
 sim('sm_car_Axle3');
 
 % Post-processing 
-sm_car_plotmaneuver(Maneuver,logsout_sm_car);
-% sm_car_plotspeed
+figure; sm_car_plotmaneuver(Maneuver,logsout_sm_car);
+figure; sm_car_plotspeed;
