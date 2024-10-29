@@ -24,6 +24,9 @@ edit sm_car_Axle3_Example;
 %% 2) Load Vehicle and Trailer Parameter
 % Parameters for the vehicle
 load('Vehicle.mat');
+
+% Additional: The model has been extended with a cabin model, whose parameters are assigned here below: 
+Vehicle = sm_car_param_cabin(Vehicle);
 assignin('base','Vehicle',Vehicle);
 
 % Parameters for the trailer

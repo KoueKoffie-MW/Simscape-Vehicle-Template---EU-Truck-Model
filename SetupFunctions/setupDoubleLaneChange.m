@@ -15,6 +15,9 @@ if ~exist('Camera','var'); startup_sm_car; end
 % Configure the maneuver: Set initial position, maneuver characteristics, and driver 
 [Maneuver, Init, Init_Trailer, Driver] = sm_car_config_maneuver('sm_car_Axle3','wot braking');
 
+% Open the fucntion below to modify any of the cabin suspension parameters:
+Vehicle = sm_car_param_cabin(Vehicle);
+
 % Set the road type to be used
 sm_car_config_road('sm_car_Axle3','plane grid');
 
@@ -26,4 +29,4 @@ sim(bdroot);
 
 % Post-processing 
 sm_car_plotmaneuver(Maneuver,logsout_sm_car);
-%sm_car_plotspeed
+sm_car_plotspeed

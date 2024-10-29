@@ -75,14 +75,6 @@ clear temp_tire_sys temp_tirevar
 subplot(2,2,1)
 text(0.05,0.2,sprintf('xFinal: %0.2f m\nyFinal: %0.2f m',...
     logsout_xCar.Data(end)-logsout_px0,logsout_yCar.Data(end)-logsout_py0),'Units','Normalized','Color',[1 1 1]*0.5);
-if(isfield(Vehicle,'config'))
-    config_string = Vehicle.config;
-else
-    config_string = 'custom';
-end
-
-text(0.05,0.85,sprintf('%s\n%s',strrep(config_string,'_','\_'),get_param(bdroot,'Solver')),...
-    'Color',[1 1 1]*0.5,'Units','Normalized','FontSize',8)
 
 subplot(2,2,3)
 text(0.05,0.85,sprintf('Elapsed Time:\n%0.2f sec',...
