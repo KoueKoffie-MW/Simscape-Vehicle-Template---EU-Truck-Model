@@ -3,6 +3,22 @@ function testExmp1()
 % Testing script to be used in the CI/CD Pipeline. Checks whether the WOT
 % scenario passes without any errors
 
+% Get all the variable in the MATLAB workspace: 
+baseVars = evalin('base', 'who');
+
+% Iterate over each variable
+for i = 1:length(baseVars)
+
+    varName = baseVars{i};
+
+    % Get the variable's value from the base workspace
+    varValue = evalin('base', varName);
+    
+    % Assign the variable to the function's workspace
+    eval([varName,'=varValue;'])
+end
+
+
 % First run the script for example 1 to see if it works:
 disp('Running WOT with plane road');
 setupWideOpenBraking;

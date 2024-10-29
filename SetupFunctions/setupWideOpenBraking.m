@@ -13,10 +13,13 @@ roadSurface = 'plane'; % Choose 'plane' or 'CRG'
 if ~bdIsLoaded('sm_car_Axle3'); open_system('sm_car_Axle3'); end
 
 % This function will load all parameter unless they are already in the workspace
-if ~exist('Camera','var'); startup_sm_car; end
+startup_sm_car;
 
 % Configure the maneuver: Set initial position, maneuver characteristics, and driver 
 [Maneuver, Init, Init_Trailer, Driver] = sm_car_config_maneuver('sm_car_Axle3','wot braking');
+
+% Open the function below to modify any of the cabin suspension parameters:
+Vehicle = sm_car_param_cabin(Vehicle);
 
 % Set up the road surface
 switch roadSurface
