@@ -1,6 +1,5 @@
 % Code to plot simulation results from sm_car
-%% Plot Description:
-%
+%% Description
 % Plot results of vehicle test: position, x and y velocity components,
 % vehicle speed, and steering input.
 %

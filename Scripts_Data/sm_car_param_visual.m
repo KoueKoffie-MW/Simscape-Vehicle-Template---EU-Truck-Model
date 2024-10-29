@@ -1,5 +1,8 @@
 function Visual = sm_car_param_visual(car_option)
-% Copyright 2018-2023 The MathWorks, Inc.
+%% Description: 
+% This function sets the parameters for the visuals (like colors and
+% opacity). The function is called in the startup function
+
 
 %% Colors
 Visual.clr.blue        = [0.2 0.4 0.6];
@@ -19,8 +22,7 @@ Visual.clr.graylight   = [0.8 0.8 0.8];
 Visual.clr.white       = [1.0 1.0 1.0];
 
 %% Part Colors
-Visual.hp.clr = Visual.clr.red;
-
+Visual.hp.clr               = Visual.clr.red;
 Visual.Shock.cyl.clr        = Visual.clr.blue;
 Visual.Shock.piston.clr     = Visual.clr.gray;
 Visual.Shock.bumpstop.clr   = Visual.clr.yellowpale;
@@ -72,7 +74,6 @@ if(strcmpi(car_option,'default'))
     
     %Visual.body.hp = [0 0 0.4225-0.1]; % Not needed?
     Visual.body.opc             = 0.3;
-    
     Visual.hp.opc               = 1;
     Visual.hp.rad               = 0.025;
     

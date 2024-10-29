@@ -83,5 +83,5 @@ cabin.arrowNormFact = 8000; % Norming factor for the forces. E.g. ForcePlot = Fo
 cabin.arrow = [-1,-0.5;1,-0.5;1,-1;2,0;1,1;1,0.5;-1,0.5]*0.2;
 
 % Assign back to the vehicle structure
-Vehicle.Chassis.Cabin = cabin;
+Vehicle.Chassis.Body.Cabin = cabin;
 end
