@@ -76,15 +76,6 @@ text(0.05,0.2,sprintf('xFinal: %0.2f m\nyFinal: %0.2f m',...
     logsout_xCar.Data(end)-logsout_px0,logsout_yCar.Data(end)-logsout_py0),'Units','Normalized','Color',[1 1 1]*0.5);
 
 subplot(2,2,3)
-text(0.05,0.85,sprintf('Elapsed Time:\n%0.2f sec',...
-    Elapsed_Sim_Time),'Units','Normalized','Color',[1 1 1]*0.5);
-
-trailer_type = sm_car_vehcfg_getTrailerType(bdroot);
-if(~strcmpi(trailer_type,'none'))
-    trailer_type = Trailer.config;
-end
-text(0.05,0.1,sprintf('Trailer: %s',strrep(trailer_type,'_','\_')),'Units','Normalized','Color',[1 1 1]*0.5);
-
 delvars = setdiff(who('logsout_*'),'logsout_sm_car');
 clear(delvars{:},'delvars');
 
