@@ -14,6 +14,5 @@ sm_car_config_road('sm_car_Axle3','crg rough road');
 sim('sm_car_Axle3');
 disp('WOT with CRG road passed');
 
-bdclose;
 close all;
 end

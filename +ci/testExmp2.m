@@ -6,5 +6,4 @@ function testExmp2()
 setupDoubleLaneChange;
 disp('Example 2: Live script run without any problem')
 
-bdclose
 end
