@@ -13,13 +13,13 @@ if ~bdIsLoaded('sm_car_Axle3'); open_system('sm_car_Axle3'); end
 if ~exist('Camera','var'); startup_sm_car; end
 
 % Configure the maneuver: Set initial position, maneuver characteristics, and driver 
-[Maneuver, Init, Init_Trailer, Driver] = sm_car_config_maneuver('sm_car_Axle3','wot braking');
+[Maneuver, Init, Init_Trailer, Driver] = sm_car_config_maneuver('sm_car_Axle3','double lane change');
 
 % Open the function below to modify any of the cabin suspension parameters:
 Vehicle = sm_car_param_cabin(Vehicle);
 
 % Set the road type to be used
-sm_car_config_road('sm_car_Axle3','plane grid');
+sm_car_config_road('sm_car_Axle3','double lane change');
 
 % For this configuration the Driving Scenario is not activated
 set_param([bdroot,'/Scenario Interpreter'], 'LabelModeActiveChoice','None');
