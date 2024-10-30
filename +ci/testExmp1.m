@@ -4,24 +4,11 @@ function testExmp1()
 % scenario passes without any errors
 
 % Get all the variable in the MATLAB workspace: 
-baseVars = evalin('base', 'who');
-
-% Iterate over each variable
-for i = 1:length(baseVars)
-
-    varName = baseVars{i};
-
-    % Get the variable's value from the base workspace
-    varValue = evalin('base', varName);
-    
-    % Assign the variable to the function's workspace
-    eval([varName,'=varValue;'])
-end
 
 
 % First run the script for example 1 to see if it works:
 disp('Running WOT with plane road');
-setupWideOpenBraking;
+evalin('base', sprintf('run(''%s'')', 'setupWideOpenBraking'));
 disp('WOT with plane road passed');
 
 % Now test also with CRG
