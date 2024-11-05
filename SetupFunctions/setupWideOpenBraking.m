@@ -6,7 +6,7 @@
 % variable altitude loaded using a CRG file
 
 %% Inputs: 
-roadSurface = 'plane'; % Choose 'plane' or 'CRG'
+roadSurface = 'CRG'; % Choose 'plane' or 'CRG'
 
 %% Implementation
 % If the model is not open, then open it

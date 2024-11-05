@@ -42,6 +42,17 @@ The model can be simulated immediately. To run other scenarios, the function con
 - Double lane change with plane surface
 - Double lane change with RoadRunner scenario
 To perform a WOT test for example, simply open and run the corresponding script as shown below:
+
+## Cabin model
+In order to test the newly built cabin model, a test harness has been created. The Cabin model is stored at [truckCabinModel.slx](Libraries/Vehicle/Cabin/truckCabinModel.slx).
+The cabin model looks as shown below: 
+![Model overivew](Libraries/Images/Documentation/simscapeCabinOverview.png) 
+
+The cabin model implements only the cabin and then applies to it an externally measured acceleration (which have been provided by the client). 
+These acceleration are used to exite the cabin COG. As a result the simulation calculates how the cabin moves. 
+The calculated movement of the cabin are then compared with the one measured by the client in a comparison plot. To launch the analysis and compare the results use the script  [truckCabinModelPostPro.m](Libraries/Vehicle/Cabin/truckCabinModelPostPro.m).
+
+
  
 ## Installation
 The model was developed in the 24b release and requires the following products:
