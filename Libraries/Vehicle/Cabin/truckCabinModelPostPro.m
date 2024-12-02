@@ -10,25 +10,35 @@
 % the measured pitch and roll angle. 
 
 %% 1) Set up model
-
 % Free workspace
 clear
+
+% Name of the cabin Harness model
+modelName = 'truckCabinModel';  
 
 % Parametrize the model
 truckCabinModelData;
 
+% Check if the model is loaded. If not open it
+if ~bdIsLoaded(modelName); open_system(modelName); end
+
 %% 2) Simulate
 % Simulate and collect results
-out = sim('truckCabinModel.slx');
+out = sim(modelName);
 
 % Data of the position of COG
 estimatedCOG = out.logsout.get('cogCabin');
 
-
+% Conversion factor between rad and deg
 deg_factor = 180/pi;
 
-figure('Color','w');
-subplot(2,1,1);
+%% 3) Plot and compare
+% Create figure
+figure('Units','centimeters','Color','w','Position',[0,0,20,12.91]);
+tiledlayout(2, 1, 'Padding', 'compact', 'TileSpacing', 'compact');
+
+% Compare estimated and real roll angle
+nexttile
 plot(estimatedCOG.Values.angx.Time, deg_factor*estimatedCOG.Values.angx.Data, 'LineWidth',1.5,'Color','b');
 hold on;
 plot(cabin_reference.time, deg_factor*(cabin_reference.roll - chassis_reference.roll),'LineWidth',1.5,'Color','r');
@@ -36,11 +46,11 @@ grid on;
 legend('Estimated', 'Measured'); title('Roll angle');
 xlabel('Time in sec'); ylabel('Angle in °');
 
-subplot(2,1,2); 
+% Compare estimated and real pitch angle
+nexttile;
 plot(estimatedCOG.Values.angy.Time, deg_factor*estimatedCOG.Values.angy.Data,'LineWidth',1.5,'Color','b');
 hold on;
 plot(cabin_reference.time, deg_factor*(cabin_reference.pitch - chassis_reference.pitch),'LineWidth',1.5,'Color','r');
 grid on;
 legend('Estimated', 'Measured'); title('Ptich angle');
-xlabel('Time in sec');
-ylabel('Angle in °'); 
+xlabel('Time in sec'); ylabel('Angle in °'); 

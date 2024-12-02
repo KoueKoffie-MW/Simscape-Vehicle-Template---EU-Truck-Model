@@ -18,12 +18,15 @@ function startup_sm_car
 modelname = 'sm_car_Axle3';
 open_system(modelname);
 
-% Also open the main script with the model description:
-edit sm_car_Axle3_Example;
-
 %% 2) Load Vehicle and Trailer Parameter
 % Parameters for the vehicle
 load('Vehicle.mat');
+
+%% Additional code to resize the truck to the DAF model: 
+Vehicle.Chassis.Body.sAxle2.Value = [-2843.64,0,0]/1000;
+Vehicle.Chassis.Body.sAxle3.Value = [-4213.64,0,0]/1000;
+Vehicle.Chassis.Body.sHitchR.Value= [-3260.9,0,1249.74]/1000;
+Vehicle.Chassis.SuspA1.Steer.DriverHuman.class.Value = 'None';
 
 % Additional: The model has been extended with a cabin model, whose parameters are assigned here below: 
 Vehicle = sm_car_param_cabin(Vehicle);

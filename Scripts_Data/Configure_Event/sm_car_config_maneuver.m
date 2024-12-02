@@ -17,11 +17,39 @@ function [Maneuver, Init, Init_Trailer, Driver] = sm_car_config_maneuver(modelna
 %% Implementation
 
 % Radius of the wheels of both truck and trailer (needed to estimate intial wheel speed)
-radiusWheel = 0.6731; % in m
+radiusWheel = 1055/2000; % in m
 
 % Find variant subsystems for settings
 f          = Simulink.FindOptions('regexp',1);
 drive_h    = Simulink.findBlocks(modelname,'popup_driver_type','.*',f);
+
+%% IDLE Maneuver: For testing purposes. Vehicle does not move
+if strcmp(maneuver,'idle')
+% 1) Set the maneuver characteristics
+    % Brake pedal position (0-1) over time (in sec) 
+    Maneuver.Brake.t.Value      = [0 200];
+    Maneuver.Brake.rPedal.Value = [0 0];
+    
+    % Steering position angle (rad) over the time (sec)
+    Maneuver.Steer.t.Value      = [0 200];
+    Maneuver.Steer.aWheel.Value = [0 0];
+    
+    % Acceleration pedal position (0-1) over time (in sec) 
+    Maneuver.Accel.t.Value      = [0 200];
+    Maneuver.Accel.rPedal.Value = [0 0];
+    
+% 2) Select the initial position of the truck AND trailer
+    Init.Chassis.aChassis.Value = [0,0,0]; % Start angle of the Vehicle COG in rad [Roll,Pitch,Yaw]
+    Init.Chassis.vChassis.Value = [0,0,0]; % Start speed of the Vehicle COG in m/s [vx, vy, vz]
+    Init.Chassis.sChassis.Value = [5,0,0]; % Start position of the vehicle COG in m [px, py, pz]
+    Init_Trailer.Chassis = Init.Chassis; % Same values for the trailer
+
+% 3) Set the Maneuver to be an Open Loop maneuver
+    set_param(drive_h,'popup_driver_type','Open Loop');
+
+% 4) Set simulation Stop time 
+    set_param(modelname,'StopTime','40');
+end
 
 %% WOT Maneuver: These variables set up a WOT Maneuver for the vehicle
 if strcmp(maneuver,'wot braking')
