@@ -23,23 +23,20 @@ open_system(modelname);
 load('Vehicle.mat');
 
 %% Additional code to resize the truck to the DAF model: 
-Vehicle.Chassis.Body.sAxle2.Value = [-2843.64,0,0]/1000;
-Vehicle.Chassis.Body.sAxle3.Value = [-4213.64,0,0]/1000;
-Vehicle.Chassis.Body.sHitchR.Value= [-3260.9,0,1249.74]/1000;
-Vehicle.Chassis.SuspA1.Steer.DriverHuman.class.Value = 'None';
-
-% Additional: The model has been extended with a cabin model, whose parameters are assigned here below: 
-Vehicle = sm_car_param_cabin(Vehicle);
-assignin('base','Vehicle',Vehicle);
+% Additional: The model has been extended with a cabin model.
+% This model is not used yet whose parameters are assigned here below: 
+% Vehicle = sm_car_param_cabin(Vehicle);
 
 % Parameters for the trailer
 load('Trailer.mat');
+
+%% Update. 
+setUpDAFTruck;
 assignin('base','Trailer',Trailer);
+assignin('base','Vehicle',Vehicle);
+
 
 %% 3) Set up a Maneuver, the Initial Position of the Vehicle and the Driver
-% The model is initialized with a simple WOT scenario. Deactivate the Road Runner scenario option
-set_param([modelname,'/Scenario Interpreter'], 'LabelModeActiveChoice','None');
-
 % Set up the parameters for the WOT scenario
 [Maneuver, Init, Init_Trailer, Driver] = sm_car_config_maneuver(modelname,'wot braking');
 

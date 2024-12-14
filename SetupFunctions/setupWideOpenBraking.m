@@ -6,7 +6,7 @@
 % variable altitude loaded using a CRG file
 
 %% Inputs: 
-roadSurface = 'CRG'; % Choose 'plane' or 'CRG'
+roadSurface = 'plane'; % Choose 'plane' or 'CRG'
 
 %% Implementation
 % If the model is not open, then open it
@@ -18,9 +18,6 @@ startup_sm_car;
 % Configure the maneuver: Set initial position, maneuver characteristics, and driver 
 [Maneuver, Init, Init_Trailer, Driver] = sm_car_config_maneuver('sm_car_Axle3','wot braking');
 
-% Open the function below to modify any of the cabin suspension parameters:
-Vehicle = sm_car_param_cabin(Vehicle);
-
 % Set up the road surface
 switch roadSurface
     case 'plane'
@@ -28,9 +25,6 @@ switch roadSurface
     case 'CRG'
         sm_car_config_road('sm_car_Axle3','crg rough road');
 end
-
-% For this configuration the Driving Scenario is not activated
-set_param('sm_car_Axle3/Scenario Interpreter', 'LabelModeActiveChoice','None');
 
 % Simulate the model
 sim('sm_car_Axle3');
