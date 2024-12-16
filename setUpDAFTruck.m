@@ -39,6 +39,11 @@ Trailer.Chassis.TireA2.TireOuter.tirFile.Value = 'which(''Truck_214_10R39.tir'')
 % Adjust Hitch Rear Position so that the trailer is located at the right height
 Vehicle.Chassis.Body.sHitchR.Value = [-1.25,0, 1.4778];
 
+%% Driver and Steering Wheel Position
+% Position the driver and the steering wheel:
+Vehicle.Chassis.SuspA1.Steer.DriverHuman.s.Value = [0.2300    0.6080    1.7400];
+Vehicle.Chassis.SuspA1.Steer.Wheel.sMount.Value  = [0.5800    0.6080    1.9400];
+
 %% Cabin and Chassis 
 % Cabin mass and inertia:
 Vehicle.Chassis.Body.Cabin.m.Value = 1200;               % in kg
@@ -54,10 +59,10 @@ Vehicle.Chassis.Cabin.sCG.Value = [0,0,1.2];
 % Measured in CAD
 Vehicle.Chassis.Body.sAxle2.Value = [-3.365,0,0];
 Vehicle.Chassis.Body.sAxle3.Value = [-4.735,0,0];
-Vehicle.Chassis.SuspA1.Steer.DriverHuman.class.Value = 'None';
+% Vehicle.Chassis.SuspA1.Steer.DriverHuman.class.Value = 'None';
 
 % Position the steering wheel with respect to the Front Axle
-Vehicle.Chassis.SuspA1.Steer.Wheel.sMount.Value = [0.7,0.558,2];
+% Vehicle.Chassis.SuspA1.Steer.Wheel.sMount.Value = [0.7,0.558,2];
 
 % Initial positions
 Init.Chassis.sChassis.Value         = [15,0,0];

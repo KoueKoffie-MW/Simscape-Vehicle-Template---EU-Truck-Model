@@ -30,7 +30,7 @@ load('Vehicle.mat');
 % Parameters for the trailer
 load('Trailer.mat');
 
-%% Update. 
+%% This function has been created to update all required variable to simulate the DAF truck
 setUpDAFTruck;
 assignin('base','Trailer',Trailer);
 assignin('base','Vehicle',Vehicle);
