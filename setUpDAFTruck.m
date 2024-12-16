@@ -59,14 +59,6 @@ Vehicle.Chassis.Cabin.sCG.Value = [0,0,1.2];
 % Measured in CAD
 Vehicle.Chassis.Body.sAxle2.Value = [-3.365,0,0];
 Vehicle.Chassis.Body.sAxle3.Value = [-4.735,0,0];
-% Vehicle.Chassis.SuspA1.Steer.DriverHuman.class.Value = 'None';
-
-% Position the steering wheel with respect to the Front Axle
-% Vehicle.Chassis.SuspA1.Steer.Wheel.sMount.Value = [0.7,0.558,2];
-
-% Initial positions
-Init.Chassis.sChassis.Value         = [15,0,0];
-Init_Trailer.Chassis.sChassis.Value = [15,0,0];
 
 %% Graphical Properties:
 % Colors for the truck (different structure because we have more part)

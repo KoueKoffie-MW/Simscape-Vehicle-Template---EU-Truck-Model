@@ -41,7 +41,7 @@ if strcmp(maneuver,'idle')
 % 2) Select the initial position of the truck AND trailer
     Init.Chassis.aChassis.Value = [0,0,0]; % Start angle of the Vehicle COG in rad [Roll,Pitch,Yaw]
     Init.Chassis.vChassis.Value = [0,0,0]; % Start speed of the Vehicle COG in m/s [vx, vy, vz]
-    Init.Chassis.sChassis.Value = [5,0,0]; % Start position of the vehicle COG in m [px, py, pz]
+    Init.Chassis.sChassis.Value = [15,0,0]; % Start position of the vehicle COG in m [px, py, pz]
     Init_Trailer.Chassis = Init.Chassis; % Same values for the trailer
 
 % 3) Set the Maneuver to be an Open Loop maneuver
