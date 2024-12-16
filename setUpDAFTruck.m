@@ -72,15 +72,15 @@ Trailer.Chassis.Body.BodyGeometry.chassisColor.Value    = [0.8 0.8 0.8];
 
 %% Suspension PRe-Load and Stiffness
 % Set the stiffness of the 5 axes in N/m
-Vehicle.Chassis.SuspA1.Simple.Heave.K.Value = 70000; 
-Vehicle.Chassis.SuspA3.Simple.Heave.K.Value = 6.6667e+04;
-Vehicle.Chassis.SuspA2.Simple.Heave.K.Value = 6.6667e+04;
-Trailer.Chassis.SuspA1.Simple.Heave.K.Value = 6.6667e+04;
-Trailer.Chassis.SuspA2.Simple.Heave.K.Value = 6.6667e+04;
+Vehicle.Chassis.SuspA1.Simple.Heave.K.Value = 6.6667e+04; 
+Vehicle.Chassis.SuspA3.Simple.Heave.K.Value = 6.3333e+04;
+Vehicle.Chassis.SuspA2.Simple.Heave.K.Value = 6.3333e+04;
+Trailer.Chassis.SuspA1.Simple.Heave.K.Value = 6.3333e+04;
+Trailer.Chassis.SuspA2.Simple.Heave.K.Value = 6.3333e+04;
 
 % Set the preload of the axes in m
-Vehicle.Chassis.SuspA1.Simple.Heave.xInit.Value = -0.3556;    
-Vehicle.Chassis.SuspA2.Simple.Heave.xInit.Value = -0.0889;  
-Vehicle.Chassis.SuspA3.Simple.Heave.xInit.Value = -0.0889;    
-Trailer.Chassis.SuspA1.Simple.Heave.xInit.Value = -0.0889;
-Trailer.Chassis.SuspA2.Simple.Heave.xInit.Value = -0.0889;
+Vehicle.Chassis.SuspA1.Simple.Heave.xInit.Value = -0.0889;    
+Vehicle.Chassis.SuspA2.Simple.Heave.xInit.Value = 0;  
+Vehicle.Chassis.SuspA3.Simple.Heave.xInit.Value = 0;    
+Trailer.Chassis.SuspA1.Simple.Heave.xInit.Value = 0;
+Trailer.Chassis.SuspA2.Simple.Heave.xInit.Value = 0;

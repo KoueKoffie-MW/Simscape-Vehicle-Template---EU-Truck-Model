@@ -38,11 +38,12 @@ Please also note that the model has a set of callbacks as InitFcn, PreloadFcn an
 ## Simulate the model
 Once you open the MATLAB project, the startup function startup_sm_car.m will set up all required variable and initialize the vehicle in a default configuration. 
 The model can be simulated immediately. To run other scenarios, the function contained in the folder SetupFunctions show how to implement different scenario. Currently three main scenarios are implemented in the three script contained in SetupFunctions: 
-- [Wide Open Throttle](setupWideOpenBraking.m).: The driver performs an acceleration followed by a braking test
-- [Double Lane Change](setupDoubleLaneChange.m): Standard Double Lane Change Maneuver
-- [Idle Test](setupIdleTest.m): The vehicle does not move. This test can be used to tune the suspensions of the vehicle 
+- [Wide Open Throttle](Scripts_Data/SetupFunctions/setupWideOpenBraking.m).: The driver performs an acceleration followed by a braking test
+- [Double Lane Change](Scripts_Data/SetupFunctions/setupDoubleLaneChange.m): Standard Double Lane Change Maneuver
+- [Idle Test](Scripts_Data/SetupFunctions/setupIdleTest.m): The vehicle does not move. This test can be used to tune the suspensions of the vehicle 
 To perform a WOT test for example, simply open and run the corresponding script as shown below:
- 
+
+
 ## Installation
 The model was developed in the 24b release and requires the following products:
 - MATLAB
