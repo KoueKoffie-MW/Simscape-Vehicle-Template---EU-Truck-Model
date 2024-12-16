@@ -23,6 +23,3 @@ sim('sm_car_Axle3');
 % Post-processing 
 figure; sm_car_plotmaneuver(Maneuver,logsout_sm_car);
 figure; sm_car_plotspeed;
-
-% Plot the COG position with respect to the Frame 
-sm_car_plotCOGPosition;
