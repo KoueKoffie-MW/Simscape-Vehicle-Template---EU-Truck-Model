@@ -38,6 +38,7 @@ Trailer.Chassis.TireA2.TireOuter.tirFile.Value = 'which(''Truck_214_10R39.tir'')
 %% Trailer Position:
 % Adjust Hitch Rear Position so that the trailer is located at the right height
 Vehicle.Chassis.Body.sHitchR.Value = [-1.25,0, 1.4778];
+Trailer.Chassis.Body.sHitchR.Value = [-3.2, 0, 1.4778];
 
 %% Driver and Steering Wheel Position
 % Position the driver and the steering wheel:

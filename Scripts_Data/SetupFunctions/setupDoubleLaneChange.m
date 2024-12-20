@@ -6,6 +6,9 @@
 % variable altitude loaded using a CRG file
 
 %% Inputs: 
+plotting = 0; % Decide whether to plot or not
+
+%% Implementation:
 % If the model is not open, then open it
 if ~bdIsLoaded('sm_car_Axle3'); open_system('sm_car_Axle3'); end
 
@@ -15,12 +18,17 @@ if ~exist('Camera','var'); startup_sm_car; end
 % Configure the maneuver: Set initial position, maneuver characteristics, and driver 
 [Maneuver, Init, Init_Trailer, Driver] = sm_car_config_maneuver('sm_car_Axle3','double lane change');
 
+% Set up maximum torque available
+Control.Default.maxTrqRequest =800;
+
 % Set the road type to be used
 sm_car_config_road('sm_car_Axle3','double lane change');
 
 % Simulate the model
 sim(bdroot);
 
-% Post-processing 
-sm_car_plotmaneuver(Maneuver,logsout_sm_car);
-sm_car_plotspeed
+%% Post-processing 
+if plotting == 1
+    sm_car_plotmaneuver(Maneuver,logsout_sm_car);
+    sm_car_plotspeed
+end

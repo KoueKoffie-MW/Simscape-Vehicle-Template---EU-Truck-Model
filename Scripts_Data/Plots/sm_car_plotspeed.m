@@ -79,6 +79,12 @@ subplot(2,2,3)
 delvars = setdiff(who('logsout_*'),'logsout_sm_car');
 clear(delvars{:},'delvars');
 
-clear simlog_handles temp_colororder
+
+f = gcf;
+f.Color = 'w';
+
+clear simlog_handles temp_colororder f
+
+
 
 

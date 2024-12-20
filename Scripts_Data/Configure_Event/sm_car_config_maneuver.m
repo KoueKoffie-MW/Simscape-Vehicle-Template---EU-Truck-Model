@@ -48,28 +48,28 @@ if strcmp(maneuver,'idle')
     set_param(drive_h,'popup_driver_type','Open Loop');
 
 % 4) Set simulation Stop time 
-    set_param(modelname,'StopTime','40');
+    set_param(modelname,'StopTime','20');
 end
 
 %% WOT Maneuver: These variables set up a WOT Maneuver for the vehicle
 if strcmp(maneuver,'wot braking')
 % 1) Set the maneuver characteristics
     % Brake pedal position (0-1) over time (in sec) 
-    Maneuver.Brake.t.Value      = [0 30 30.2 190 191 200];
+    Maneuver.Brake.t.Value      = [0 25 25.2 35 35.2 40];
     Maneuver.Brake.rPedal.Value = [0 0  1    1   0   0];
     
     % Steering position angle (rad) over the time (sec)
-    Maneuver.Steer.t.Value      = [0 200];
+    Maneuver.Steer.t.Value      = [0 40];
     Maneuver.Steer.aWheel.Value = [0 0];
     
     % Acceleration pedal position (0-1) over time (in sec) 
-    Maneuver.Accel.t.Value      = [0 1 1.2 25 25.2 200];
+    Maneuver.Accel.t.Value      = [0 1 1.2 20 20.2 40];
     Maneuver.Accel.rPedal.Value = [0 0 1   1  0    0];
     
 % 2) Select the initial position of the truck AND trailer
     Init.Chassis.aChassis.Value = [0,0,0]; % Start angle of the Vehicle COG in rad [Roll,Pitch,Yaw]
-    Init.Chassis.vChassis.Value = [1,0,0]; % Start speed of the Vehicle COG in m/s [vx, vy, vz]
-    Init.Chassis.sChassis.Value = [5,0,0]; % Start position of the vehicle COG in m [px, py, pz]
+    Init.Chassis.vChassis.Value = [0,0,0]; % Start speed of the Vehicle COG in m/s [vx, vy, vz]
+    Init.Chassis.sChassis.Value = [15,0,0]; % Start position of the vehicle COG in m [px, py, pz]
     Init_Trailer.Chassis = Init.Chassis; % Same values for the trailer
 
 % 3) Set the Maneuver to be an Open Loop maneuver
@@ -96,6 +96,8 @@ if strcmp(maneuver,'double lane change')
     % aYaw Yaw angle in rad  | Trajectory.xTrajectory: Driven speed in m
     Trajectory = load('Double_Lane_Change_trajectory_default');
     Maneuver.Trajectory = Trajectory;
+    Maneuver.Trajectory.vx.Value = Maneuver.Trajectory.vx.Value*0.5;
+
 
 % 2) Select the initial position of the truck:
     Init.Chassis.aChassis.Value = [0,0,0]; % Start angle of the Vehicle COG in rad [Roll,Pitch,Yaw]
@@ -107,7 +109,7 @@ if strcmp(maneuver,'double lane change')
     set_param(drive_h,'popup_driver_type','Closed Loop');
 
 % 4) Set simulation Stop time 
-    set_param(modelname,'StopTime','40');
+    set_param(modelname,'StopTime','55');
 end
 
 % Inform the user if what he chose is not available:

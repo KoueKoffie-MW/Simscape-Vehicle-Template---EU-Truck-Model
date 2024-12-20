@@ -7,13 +7,18 @@
 
 %% Inputs: 
 roadSurface = 'plane'; % Choose 'plane' or 'CRG'
+plotting    = 0;       % Decide whether to plot or not
 
 %% Implementation
 % If the model is not open, then open it
 if ~bdIsLoaded('sm_car_Axle3'); open_system('sm_car_Axle3'); end
 
 % This function will load all parameter unless they are already in the workspace
-startup_sm_car;
+if ~exist('Camera','var')
+    startup_sm_car;
+end
+
+Control.Default.maxTrqRequest =1200;
 
 % Configure the maneuver: Set initial position, maneuver characteristics, and driver 
 [Maneuver, Init, Init_Trailer, Driver] = sm_car_config_maneuver('sm_car_Axle3','wot braking');
@@ -30,5 +35,7 @@ end
 sim('sm_car_Axle3');
 
 % Post-processing 
-figure; sm_car_plotmaneuver(Maneuver,logsout_sm_car);
-figure; sm_car_plotspeed;
+if plotting == 1
+    figure; sm_car_plotmaneuver(Maneuver,logsout_sm_car);
+    figure; sm_car_plotspeed;
+end

@@ -40,7 +40,7 @@ if(~isempty(hasTrajectory))
     %% Plot the other plots
     ah(1) = subplot(211);
     plot(logsout_dist.Data,logsout_ref_vx.Data,'-o');
-    hold on
+    hold on; grid on;
     plot(logsout_dist.Data,logsout_vx.Data,'LineWidth',1);
     hold off
     title('Target Speed Along Trajectory');
@@ -49,7 +49,7 @@ if(~isempty(hasTrajectory))
     
     ah(2) = subplot(212);
     plot(logsout_dist.Data,ayaw_ref,'-o');
-    hold on
+    hold on; grid on;
     
     % Determine when a lap is completed
     lapind = find(abs(diff(logsout_dist.Data))>50);
@@ -86,41 +86,9 @@ if(~isempty(hasTrajectory))
     xlabel('Distance Traveled (m)');
     ylabel('Target Yaw Angle (rad)');
     title('Target Yaw Angle Along Trajectory');
-    linkaxes(ah, 'x')
-
-	% Prepare third figure handle
-    fig_handle_name = 'h3_sm_car_maneuver';
-    handle_var = evalin('base',['who(''' fig_handle_name ''')']);
-    if(isempty(handle_var))
-        evalin('base',[fig_handle_name ' = figure(''Name'', ''' fig_handle_name ''');']);
-    elseif ~isgraphics(evalin('base',handle_var{:}))
-        evalin('base',[fig_handle_name ' = figure(''Name'', ''' fig_handle_name ''');']);
-    end
-    figure(evalin('base',fig_handle_name))
-    clf(evalin('base',fig_handle_name))
-    
-    ah3(1) = subplot(211);
-    plot(logsout_ref_vx.Time,logsout_ref_vx.Data,'-o');
-    hold on
-    plot(logsout_vx.Time,logsout_vx.Data,'LineWidth',1);
-    hold off
-    title('Target Speed vs. Time');
-    ylabel('Speed (m/s)');
-   
-    
-    ah3(2) = subplot(212);
-    plot(logsout_dist.Time,ayaw_ref,'-o');
-    hold on
-
-	plot(logsout_dist.Time,yawUnwrapLap+offset,'LineWidth',1);
-    hold off
-    xlabel('Time (s)');
-    ylabel('Yaw Angle (rad)');
-    title('Target Yaw Angle vs Time');
-    linkaxes(ah3, 'x')
-
+    linkaxes(ah, 'x');
 else
-    % Plot Maneuver with Open-Loop Driver Commands
+    % Plot Maneuver with Open-Loop Driver Command
     % Extract simulation results
     logsout_DrvBus = logsout_sm_car.get('DrvBus');
     logsout_aSteerWheel = logsout_DrvBus.Values.aSteerWheel*180/pi;
@@ -129,7 +97,7 @@ else
     
     ah(1) = subplot(311);
     plot(Maneuver.Accel.t.Value,Maneuver.Accel.rPedal.Value,'-o','LineWidth',2);
-    hold on
+    hold on; grid on;
     plot(logsout_rAccelPedal.Time,logsout_rAccelPedal.Data,'--x','LineWidth',1);
     hold off
     ylabel('Travel (0-1)');
@@ -139,7 +107,7 @@ else
     
     ah(2) = subplot(312);
     plot(Maneuver.Brake.t.Value,Maneuver.Brake.rPedal.Value,'-o','LineWidth',2);
-    hold on
+    hold on; grid on;
     plot(logsout_rBrakePedal.Time,logsout_rBrakePedal.Data,'--x','LineWidth',1);
     hold off
     ylabel('Travel (0-1)');
@@ -148,7 +116,7 @@ else
     
     ah(3) = subplot(313);
     plot(Maneuver.Steer.t.Value,Maneuver.Steer.aWheel.Value*180/pi,'-o','LineWidth',2);
-    hold on
+    hold on; grid on;
     plot(logsout_aSteerWheel.Time,logsout_aSteerWheel.Data,'--x','LineWidth',1);
     hold off
     ylabel('Angle (deg)')
@@ -160,3 +128,7 @@ else
     set(ah(1),'XLim',[logsout_aSteerWheel.Time(1) logsout_aSteerWheel.Time(end)]);
 end
 
+f = gcf;
+f.Color = 'w';
+
+end
