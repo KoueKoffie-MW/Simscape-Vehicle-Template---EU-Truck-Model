@@ -109,7 +109,7 @@ if strcmp(maneuver,'double lane change')
     set_param(drive_h,'popup_driver_type','Closed Loop');
 
 % 4) Set simulation Stop time 
-    set_param(modelname,'StopTime','55');
+    set_param(modelname,'StopTime','100');
 end
 
 % Inform the user if what he chose is not available:

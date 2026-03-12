@@ -1,2 +1,3610 @@
-<?xml version="1.0" ?>
-<Info MetadataType="fixedPathV2"></Info>
+<?xml version="1.0" encoding="UTF-8"?>
+<project MetadataType="monolithic">
+    <Categories Location="Root">
+        <Category Location="FileClassCategory">
+            <Info DataType="None" Name="Classification" ReadOnly="1" SingleValued="1"/>
+            <Label Location="artifact">
+                <Info Name="Artifact" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="convenience">
+                <Info Name="Convenience" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="derived">
+                <Info Name="Derived" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="design">
+                <Info Name="Design" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="none">
+                <Info Name="None" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="other">
+                <Info Name="Other" ReadOnly="READ_ONLY"/>
+            </Label>
+            <Label Location="test">
+                <Info Name="Test" ReadOnly="READ_ONLY"/>
+            </Label>
+        </Category>
+    </Categories>
+    <EntryPoints Location="Root">
+        <EntryPoint Location="158ae27d-ecab-4e1e-a5b0-9947cd384cc6">
+            <Info File="sm_car_Axle3.slx" GroupUUID="" Icon="" Name="sm_car_Axle3" Type="Basic" Visible="1"/>
+        </EntryPoint>
+        <EntryPoint Location="4ca877cb-e232-4a1f-a997-a7b98f5773d2">
+            <Info File="Scripts_Data/SetupFunctions/setupWideOpenBraking.m" GroupUUID="" Icon="" Name="setupWideOpenBraking" Type="Basic" Visible="1"/>
+        </EntryPoint>
+        <EntryPoint Location="7f5af8d5-5766-482d-9c53-12ee49577059">
+            <Info File="Scripts_Data/startup_sm_car.m" GroupUUID="" Icon="" Name="startup_sm_car" Type="StartUp" Visible="1"/>
+        </EntryPoint>
+    </EntryPoints>
+    <Files Location="Root">
+        <File Location=".gitattributes">
+            <Info/>
+        </File>
+        <File Location=".gitignore">
+            <Info/>
+        </File>
+        <File Location="Libraries">
+            <Info/>
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+            <File Location="Event">
+                <Info/>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <File Location="Scene">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="CRG_Rough_Road">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="CRG_Rough_Road.crg">
+                            <Info/>
+                        </File>
+                        <File Location="CRG_Rough_Road.stl">
+                            <Info/>
+                        </File>
+                        <File Location="CRG_Rough_Road_dat.mat">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="CRG_Rough_Road_preview.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Data">
+                            <Info/>
+                            <DIR_SIGNIFIER Location="1">
+                                <Info/>
+                            </DIR_SIGNIFIER>
+                            <File Location="CRG_Create_Rough_Road.m">
+                                <Info>
+                                    <Category UUID="FileClassCategory">
+                                        <Label UUID="design"/>
+                                    </Category>
+                                </Info>
+                            </File>
+                            <File Location="CRG_Rough_Road_grid.xlsx">
+                                <Info/>
+                            </File>
+                        </File>
+                        <File Location="sm_car_scene_crg_rough_road.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="sm_car_scenedata_crg_rough_road.m">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                    <File Location="Double_Lane_Change">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="Double_Lane_Change_trajectory_default.mat">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="sm_car_scene_double_lane_change.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="sm_car_scenedata_double_lane_change.m">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="sm_car_trajectory_double_lane_change.m">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                    <File Location="Plane_Grid">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="sm_car_scene_plane_grid.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="sm_car_scenedata_plane_grid.m">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                </File>
+                <File Location="Tools">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="OpenCRG_v1p1p2">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="matlab">
+                            <Info/>
+                            <DIR_SIGNIFIER Location="1">
+                                <Info/>
+                            </DIR_SIGNIFIER>
+                            <File Location="lib">
+                                <Info/>
+                                <DIR_SIGNIFIER Location="1">
+                                    <Info/>
+                                </DIR_SIGNIFIER>
+                                <File Location="crg_check.m">
+                                    <Info>
+                                        <Category UUID="FileClassCategory">
+                                            <Label UUID="design"/>
+                                        </Category>
+                                    </Info>
+                                </File>
+                                <File Location="crg_check_data.m">
+                                    <Info>
+                                        <Category UUID="FileClassCategory">
+                                            <Label UUID="design"/>
+                                        </Category>
+                                    </Info>
+                                </File>
+                                <File Location="crg_check_head.m">
+                                    <Info>
+                                        <Category UUID="FileClassCategory">
+                                            <Label UUID="design"/>
+                                        </Category>
+                                    </Info>
+                                </File>
+                                <File Location="crg_check_mods.m">
+                                    <Info>
+                                        <Category UUID="FileClassCategory">
+                                            <Label UUID="design"/>
+                                        </Category>
+                                    </Info>
+                                </File>
+                                <File Location="crg_check_opts.m">
+                                    <Info>
+                                        <Category UUID="FileClassCategory">
+                                            <Label UUID="design"/>
+                                        </Category>
+                                    </Info>
+                                </File>
+                                <File Location="crg_check_single.m">
+                                    <Info>
+                                        <Category UUID="FileClassCategory">
+                                            <Label UUID="design"/>
+                                        </Category>
+                                    </Info>
+                                </File>
+                                <File Location="crg_eval_uv2z_codegen.m">
+                                    <Info>
+                                        <Category UUID="FileClassCategory">
+                                            <Label UUID="design"/>
+                                        </Category>
+                                    </Info>
+                                </File>
+                                <File Location="crg_eval_xy2uv_codegen.m">
+                                    <Info>
+                                        <Category UUID="FileClassCategory">
+                                            <Label UUID="design"/>
+                                        </Category>
+                                    </Info>
+                                </File>
+                                <File Location="crg_read.m">
+                                    <Info>
+                                        <Category UUID="FileClassCategory">
+                                            <Label UUID="design"/>
+                                        </Category>
+                                    </Info>
+                                </File>
+                                <File Location="crg_single.m">
+                                    <Info>
+                                        <Category UUID="FileClassCategory">
+                                            <Label UUID="design"/>
+                                        </Category>
+                                    </Info>
+                                </File>
+                                <File Location="crg_wgs84_dist.m">
+                                    <Info>
+                                        <Category UUID="FileClassCategory">
+                                            <Label UUID="design"/>
+                                        </Category>
+                                    </Info>
+                                </File>
+                                <File Location="ipl_read.m">
+                                    <Info>
+                                        <Category UUID="FileClassCategory">
+                                            <Label UUID="design"/>
+                                        </Category>
+                                    </Info>
+                                </File>
+                                <File Location="sdf_cut.m">
+                                    <Info>
+                                        <Category UUID="FileClassCategory">
+                                            <Label UUID="design"/>
+                                        </Category>
+                                    </Info>
+                                </File>
+                            </File>
+                        </File>
+                    </File>
+                    <File Location="sm_car_plot_maneuver.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_road_track_extrusion.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                </File>
+                <File Location="sm_car_import_scene_data.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+            </File>
+            <File Location="Images">
+                <Info/>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <File Location="Body">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="sm_car_body_basic_trailer.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_body_box_trailer.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_body_cad.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_body_cad_bus_makhulu.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_body_cad_sedan_hamba.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_body_cad_trailer_kumanzi.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_body_cad_trailer_small.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_body_cad_trailer_thwala.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_body_cad_truck_amandla.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_body_default.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_body_semi_truck.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_body_tank_trailer.png">
+                        <Info/>
+                    </File>
+                </File>
+                <File Location="BodyGeometry">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="sm_car_bodygeometry_basic_trailer.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_bodygeometry_box_trailer.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_bodygeometry_cad.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_bodygeometry_cad_bus_makhulu.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_bodygeometry_cad_fsae_achilles.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_bodygeometry_cad_sedan_hamba.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_bodygeometry_cad_trailer_kumanzi.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_bodygeometry_cad_trailer_kumanzi_small.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_bodygeometry_cad_trailer_thwala.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_bodygeometry_cad_truck_amandla.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_bodygeometry_cad_truck_daf.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_bodygeometry_sedan.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_bodygeometry_semi_truck.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_bodygeometry_tank_trailer.png">
+                        <Info/>
+                    </File>
+                </File>
+                <File Location="Cabin">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="Link_End_nx_IMAGE.png">
+                        <Info/>
+                    </File>
+                    <File Location="Link_End_px_IMAGE.png">
+                        <Info/>
+                    </File>
+                    <File Location="Link_IMAGE.png">
+                        <Info/>
+                    </File>
+                    <File Location="Link_Seg_1_Hole_nx_IMAGE.png">
+                        <Info/>
+                    </File>
+                    <File Location="Link_Seg_1_Hole_px_IMAGE.png">
+                        <Info/>
+                    </File>
+                    <File Location="Rod_nZ_IMAGE.png">
+                        <Info/>
+                    </File>
+                    <File Location="Rod_pZ_IMAGE.png">
+                        <Info/>
+                    </File>
+                    <File Location="Shock_Assembly_IMAGE.png">
+                        <Info/>
+                    </File>
+                    <File Location="Swing_Arm_Front_IMAGE.png">
+                        <Info/>
+                    </File>
+                    <File Location="Swing_Arm_Front_Rubber_Bearing_IMAGE.png">
+                        <Info/>
+                    </File>
+                    <File Location="Swing_Arm_Rear_IMAGE.png">
+                        <Info/>
+                    </File>
+                    <File Location="Swing_Arm_Rear_Rubber_Bearing_IMAGE.png">
+                        <Info/>
+                    </File>
+                </File>
+                <File Location="Chassis">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="sm_car_chassis_basic_trailer.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_chassis_box_trailer.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_chassis_cad.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_chassis_cad_bus_makhulu.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_chassis_cad_sedan_hamba.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_chassis_cad_trailer_kumanzi.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_chassis_cad_trailer_thwala.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_chassis_cad_truck_amandla.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_chassis_cad_truck_daf.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_chassis_default.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_chassis_sedan.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_chassis_semi_truck.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_chassis_tank_trailer.png">
+                        <Info/>
+                    </File>
+                </File>
+                <File Location="Documentation">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="Avatar.png">
+                        <Info/>
+                    </File>
+                    <File Location="modelOverview.png">
+                        <Info/>
+                    </File>
+                    <File Location="simscapeOverview.png">
+                        <Info/>
+                    </File>
+                </File>
+                <File Location="Vehicle">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="sm_car_vehicle_axle1_default.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_axle2_default.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_axle2_trailer_default.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_basic_trailer.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_box_trailer.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_cad_bus_makhulu.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_cad_bus_makhulu3axle.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_cad_sedan_hamba.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_cad_trailer_kumanzi.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_cad_trailer_thwala.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_cad_truck_amandla.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_cad_truck_daf.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_sedan.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_semi_truck.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_tank_trailer.png">
+                        <Info/>
+                    </File>
+                </File>
+                <File Location="Vehicle_Trailer">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="sm_car_vehicle_axle2_default_default.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_axle2_default_none.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_axle3_default_default.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_axle3_default_none.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_cad_bus_makhulu3axle_box_trailer.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_cad_bus_makhulu3axle_cad_trailer_kumanzi.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_cad_bus_makhulu3axle_none.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_cad_bus_makhulu3axle_tank_trailer.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_cad_bus_makhulu_basic_trailer.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_cad_bus_makhulu_cad_trailer_thwala.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_cad_bus_makhulu_none.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_cad_sedan_hamba_basic_trailer.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_cad_sedan_hamba_cad_trailer_thwala.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_cad_sedan_hamba_none.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_cad_truck_amandla_box_trailer.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_cad_truck_amandla_cad_trailer_kumanzi.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_cad_truck_amandla_none.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_cad_truck_amandla_tank_trailer.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_cad_truck_daf_none.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_sedan_basic_trailer.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_sedan_cad_trailer_thwala.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_sedan_none.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_semi_truck_box_trailer.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_semi_truck_cad_trailer_kumanzi.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_semi_truck_none.png">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_vehicle_semi_truck_tank_trailer.png">
+                        <Info/>
+                    </File>
+                </File>
+                <File Location="sm_car_2wayValve_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_2wayValve_nomOpen_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_cylinder_two_points.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_linkage_trackrod_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_primitive_bushing.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_primitive_gimbal.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_transform_align_axis_three_points.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_transform_align_axis_two_points.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_variant_revolute.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_variant_spherical.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_variant_universal.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_bodyload_slosh_3pend_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_bodyload_slosh_tankcyl_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_brakes_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_brakes_abs_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_brakes_pedal_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_brakes_pressure_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_chassis_damper_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_chassis_spring_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_driveline_axle1_a1_a1diff_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_driveline_axle2_a12visc_a1diff_a2diff_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_driveline_axle2_a1_a1diff_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_driveline_axle2_a1_a2_a1diff_a2diff_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_driveline_axle2_a1_l2_r2_a1diff_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_driveline_axle2_l1_r1_l2_r2_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_driveline_axle3_a23_a2diff_a3diff_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_driveline_axle3_a2_a2diff_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_driveline_differential_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_5ldec_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_5ls2laf_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_5ls2lafc_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_5ls2lar_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_antirollbar_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_antirollbar_rod_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_bellcrank_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_dw_hp_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_dw_la_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_dw_pushrodua_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_dw_pushrodua_hp_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_dw_pushrodua_noSteer_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_dw_pushrodua_nosteer_ua_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_dw_pushrodua_ua_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_dw_ua_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_dw_upr_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_dwa_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_dwb_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_dwdec_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_link5_hp_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_link5_upr_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_link_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_link_s2f_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_link_s2r_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_pushrod_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_rollHeaveDecouple_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_s2laf_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_s2lar_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_shock_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_shock_hpu_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_sla_hp_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_linkage_sla_upr_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_passenger_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_power_battery_system_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_power_cooling_active1loop_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_power_cooling_none_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_power_e2motor_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_power_e3motor_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_power_e4motor_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_power_emotor_simplified_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_power_fc1motor_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_power_fuel_cell_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_power_fuel_cell_converter_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_power_ideal1motor_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_power_ideal2motor_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_power_ideal4motor_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_powertrain_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_susp_leaf_spring_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_susp_linkage_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_susp_linkage_decouple_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_susp_liveaxle_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_susp_simple_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_tire_cfl2x_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_tire_cfl_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_tire_delft2x_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_tire_delft_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_tire_delftcpi2x_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_tire_delftcpi_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_tire_mfeval2x_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_tire_mfeval_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_tire_mfmbody2x_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_tire_mfmbody_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_tire_testrig2x_IMAGE.png">
+                    <Info/>
+                </File>
+                <File Location="sm_car_vehicle_tire_testrig_IMAGE.png">
+                    <Info/>
+                </File>
+            </File>
+            <File Location="Vehicle">
+                <Info/>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <File Location="Aero">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="Aero_Coefficients.slx">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                </File>
+                <File Location="AntiRollBar">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="AntiRollBar_Droplink.slx">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="AntiRollBar_Droplink_Rod.slx">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="AntiRollBar_None.slx">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="AntiRollBar_Simple.slx">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="AntiRollBar_Systems.slx">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                </File>
+                <File Location="Body">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="BodyGeometry_Axle2.slx">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="Body_Axle2.slx">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="CAD">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="Body_CAD.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Bus Makhulu">
+                            <Info/>
+                            <DIR_SIGNIFIER Location="1">
+                                <Info/>
+                            </DIR_SIGNIFIER>
+                            <File Location="Bus_Makhulu_WheelF_Bolts.STEP">
+                                <Info/>
+                            </File>
+                            <File Location="Bus_Makhulu_WheelF_Rim.STEP">
+                                <Info/>
+                            </File>
+                            <File Location="Bus_Makhulu_WheelF_Tire.STEP">
+                                <Info/>
+                            </File>
+                            <File Location="Bus_Makhulu_WheelR_BoltsR.STEP">
+                                <Info/>
+                            </File>
+                            <File Location="Bus_Makhulu_WheelR_Rim.STEP">
+                                <Info/>
+                            </File>
+                            <File Location="Bus_Makhulu_WheelR_Tires.STEP">
+                                <Info/>
+                            </File>
+                        </File>
+                        <File Location="Sedan_Hamba">
+                            <Info/>
+                            <DIR_SIGNIFIER Location="1">
+                                <Info/>
+                            </DIR_SIGNIFIER>
+                            <File Location="STEP">
+                                <Info/>
+                                <DIR_SIGNIFIER Location="1">
+                                    <Info/>
+                                </DIR_SIGNIFIER>
+                                <File Location="Sedan_Hamba_door_handles.STEP">
+                                    <Info/>
+                                </File>
+                                <File Location="Sedan_Hamba_exhaust.STEP">
+                                    <Info/>
+                                </File>
+                                <File Location="Sedan_Hamba_gearshift.STEP">
+                                    <Info/>
+                                </File>
+                                <File Location="Sedan_Hamba_grill.STEP">
+                                    <Info/>
+                                </File>
+                                <File Location="Sedan_Hamba_hitch_tow_ball_nut.STEP">
+                                    <Info/>
+                                </File>
+                                <File Location="Sedan_Hamba_steering_wheel.STEP">
+                                    <Info/>
+                                </File>
+                                <File Location="Sedan_Hamba_wheel_hubcap.STEP">
+                                    <Info/>
+                                </File>
+                                <File Location="Sedan_Hamba_wheel_lug_nuts.STEP">
+                                    <Info/>
+                                </File>
+                                <File Location="Sedan_Hamba_wheel_rim.STEP">
+                                    <Info/>
+                                </File>
+                            </File>
+                            <File Location="STL">
+                                <Info/>
+                                <DIR_SIGNIFIER Location="1">
+                                    <Info/>
+                                </DIR_SIGNIFIER>
+                                <File Location="Body">
+                                    <Info/>
+                                    <DIR_SIGNIFIER Location="1">
+                                        <Info/>
+                                    </DIR_SIGNIFIER>
+                                    <File Location="Sedan_Hamba_body.STL">
+                                        <Info/>
+                                    </File>
+                                    <File Location="Sedan_Hamba_headlight_L.STL">
+                                        <Info/>
+                                    </File>
+                                    <File Location="Sedan_Hamba_headlight_R.STL">
+                                        <Info/>
+                                    </File>
+                                    <File Location="Sedan_Hamba_hitch_bolt.STL">
+                                        <Info/>
+                                    </File>
+                                    <File Location="Sedan_Hamba_hitch_mount_1.STL">
+                                        <Info/>
+                                    </File>
+                                    <File Location="Sedan_Hamba_hitch_mount_2.STL">
+                                        <Info/>
+                                    </File>
+                                    <File Location="Sedan_Hamba_hitch_mount_nut.STL">
+                                        <Info/>
+                                    </File>
+                                    <File Location="Sedan_Hamba_hitch_throat.STL">
+                                        <Info/>
+                                    </File>
+                                    <File Location="Sedan_Hamba_hitch_tongue.STL">
+                                        <Info/>
+                                    </File>
+                                    <File Location="Sedan_Hamba_hitch_tow_ball.STL">
+                                        <Info/>
+                                    </File>
+                                    <File Location="Sedan_Hamba_license_plate.STL">
+                                        <Info/>
+                                    </File>
+                                    <File Location="Sedan_Hamba_rearview_mirror.STL">
+                                        <Info/>
+                                    </File>
+                                    <File Location="Sedan_Hamba_seats.STL">
+                                        <Info/>
+                                    </File>
+                                    <File Location="Sedan_Hamba_steering_column.STL">
+                                        <Info/>
+                                    </File>
+                                    <File Location="Sedan_Hamba_taillights.STL">
+                                        <Info/>
+                                    </File>
+                                    <File Location="Sedan_Hamba_wipers.STL">
+                                        <Info/>
+                                    </File>
+                                </File>
+                                <File Location="Wheel">
+                                    <Info/>
+                                    <DIR_SIGNIFIER Location="1">
+                                        <Info/>
+                                    </DIR_SIGNIFIER>
+                                    <File Location="Sedan_Hamba_brake_caliper_L.STL">
+                                        <Info/>
+                                    </File>
+                                    <File Location="Sedan_Hamba_brake_caliper_R.STL">
+                                        <Info/>
+                                    </File>
+                                    <File Location="Sedan_Hamba_brake_caliper_mount_L.STL">
+                                        <Info/>
+                                    </File>
+                                    <File Location="Sedan_Hamba_brake_caliper_mount_R.STL">
+                                        <Info/>
+                                    </File>
+                                    <File Location="Sedan_Hamba_wheel_brake_disc.STL">
+                                        <Info/>
+                                    </File>
+                                    <File Location="Sedan_Hamba_wheel_tire.STL">
+                                        <Info/>
+                                    </File>
+                                </File>
+                            </File>
+                            <File Location="Sedan_Hamba_Parts.slx">
+                                <Info>
+                                    <Category UUID="FileClassCategory">
+                                        <Label UUID="design"/>
+                                    </Category>
+                                </Info>
+                            </File>
+                        </File>
+                        <File Location="Trailer_Kumanzi">
+                            <Info/>
+                            <DIR_SIGNIFIER Location="1">
+                                <Info/>
+                            </DIR_SIGNIFIER>
+                            <File Location="Parts">
+                                <Info/>
+                                <DIR_SIGNIFIER Location="1">
+                                    <Info/>
+                                </DIR_SIGNIFIER>
+                                <File Location="Trailer_Kumanzi_Frame.step">
+                                    <Info/>
+                                </File>
+                                <File Location="Trailer_Kumanzi_Ladder.step">
+                                    <Info/>
+                                </File>
+                                <File Location="Trailer_Kumanzi_Tank.step">
+                                    <Info/>
+                                </File>
+                            </File>
+                            <File Location="Trailer_Kumanzi_Parts.slx">
+                                <Info>
+                                    <Category UUID="FileClassCategory">
+                                        <Label UUID="design"/>
+                                    </Category>
+                                </Info>
+                            </File>
+                        </File>
+                        <File Location="Trailer_Kumanzi_Small">
+                            <Info/>
+                            <DIR_SIGNIFIER Location="1">
+                                <Info/>
+                            </DIR_SIGNIFIER>
+                            <File Location="Parts">
+                                <Info/>
+                                <DIR_SIGNIFIER Location="1">
+                                    <Info/>
+                                </DIR_SIGNIFIER>
+                                <File Location="Trailer_Kumanzi_Frame_Small.SLDPRT">
+                                    <Info/>
+                                </File>
+                                <File Location="Trailer_Kumanzi_Ladder_Small.SLDPRT">
+                                    <Info/>
+                                </File>
+                                <File Location="Trailer_Kumanzi_Tank_Small.SLDPRT">
+                                    <Info/>
+                                </File>
+                            </File>
+                        </File>
+                        <File Location="Truck_Amandla">
+                            <Info/>
+                            <DIR_SIGNIFIER Location="1">
+                                <Info/>
+                            </DIR_SIGNIFIER>
+                            <File Location="Parts">
+                                <Info/>
+                                <DIR_SIGNIFIER Location="1">
+                                    <Info/>
+                                </DIR_SIGNIFIER>
+                                <File Location="Truck_Amandla_Cabin.step">
+                                    <Info/>
+                                </File>
+                                <File Location="Truck_Amandla_Frame.step">
+                                    <Info/>
+                                </File>
+                                <File Location="Truck_Amandla_Wheel_Rim.step">
+                                    <Info/>
+                                </File>
+                                <File Location="Truck_Amandla_Wheel_Tire.step">
+                                    <Info/>
+                                </File>
+                            </File>
+                            <File Location="Truck_Amandla_Parts.slx">
+                                <Info>
+                                    <Category UUID="FileClassCategory">
+                                        <Label UUID="design"/>
+                                    </Category>
+                                </Info>
+                            </File>
+                        </File>
+                    </File>
+                    <File Location="Human">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="CAD">
+                            <Info/>
+                            <DIR_SIGNIFIER Location="1">
+                                <Info/>
+                            </DIR_SIGNIFIER>
+                            <File Location="Human_arm_lower_L.STEP">
+                                <Info/>
+                            </File>
+                            <File Location="Human_arm_lower_R.STEP">
+                                <Info/>
+                            </File>
+                            <File Location="Human_arm_upper_L.STEP">
+                                <Info/>
+                            </File>
+                            <File Location="Human_arm_upper_R.STEP">
+                                <Info/>
+                            </File>
+                            <File Location="Human_foot_L.STEP">
+                                <Info/>
+                            </File>
+                            <File Location="Human_foot_R.STEP">
+                                <Info/>
+                            </File>
+                            <File Location="Human_hand_L.STEP">
+                                <Info/>
+                            </File>
+                            <File Location="Human_hand_R.STEP">
+                                <Info/>
+                            </File>
+                            <File Location="Human_head.STEP">
+                                <Info/>
+                            </File>
+                            <File Location="Human_leg_lower_L.STEP">
+                                <Info/>
+                            </File>
+                            <File Location="Human_leg_lower_R.STEP">
+                                <Info/>
+                            </File>
+                            <File Location="Human_leg_upper_L.STEP">
+                                <Info/>
+                            </File>
+                            <File Location="Human_leg_upper_R.STEP">
+                                <Info/>
+                            </File>
+                            <File Location="Human_pelvis.STEP">
+                                <Info/>
+                            </File>
+                            <File Location="Human_toe_L.STEP">
+                                <Info/>
+                            </File>
+                            <File Location="Human_toe_R.STEP">
+                                <Info/>
+                            </File>
+                            <File Location="Human_torso.STEP">
+                                <Info/>
+                            </File>
+                        </File>
+                        <File Location="Human_Models.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                    <File Location="Sedan">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="BodyGeometry_Sedan.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                    <File Location="Semi_Truck">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="BodyGeometry_Semi_Truck.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                    <File Location="Trailer">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="BodyGeometry_Box_Trailer.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="BodyGeometry_Tank_Trailer.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                </File>
+                <File Location="Brakes">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="Axle2">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="Brakes_Axle2.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Brakes_Axle2_HydraulicValves_Channel4.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Brakes_Axle2_None.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Brakes_Axle2_PedalAbstract_DiscDisc.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Brakes_Axle2_PressureAbstract_DiscDisc.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                    <File Location="Brakes_Elements.slx">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                </File>
+                <File Location="Cabin">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="20240719_152312.mat">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="HelperFunctions">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="Extr_Data_Link1Hole.m">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Extr_Data_LinkHoles.m">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Extr_Data_Ring.m">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="interpolateSpringDamper.m">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="loadLUTs.m">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                    <File Location="Linkage_Shock.slx">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="cabin_suspension.slx">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_param_cabin.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="truckCabinModel.slx">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="truckCabinModelData.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="truckCabinModelPostPro.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                </File>
+                <File Location="CabinDAF">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="Cabin.SLDPRT">
+                        <Info/>
+                    </File>
+                    <File Location="CabinCover.SLDPRT">
+                        <Info/>
+                    </File>
+                    <File Location="Chassis.SLDPRT">
+                        <Info/>
+                    </File>
+                    <File Location="ChassisCover.SLDPRT">
+                        <Info/>
+                    </File>
+                    <File Location="ChassisTrailer.SLDPRT">
+                        <Info/>
+                    </File>
+                    <File Location="DAFRim.SLDPRT">
+                        <Info/>
+                    </File>
+                    <File Location="DAFTire.SLDPRT">
+                        <Info/>
+                    </File>
+                    <File Location="DAFTireCover.SLDPRT">
+                        <Info/>
+                    </File>
+                    <File Location="Seats.SLDPRT">
+                        <Info/>
+                    </File>
+                    <File Location="TrailerCover.SLDPRT">
+                        <Info/>
+                    </File>
+                    <File Location="Truck_214_10R39.tir">
+                        <Info/>
+                    </File>
+                </File>
+                <File Location="Chassis">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="Chassis_Axle2.slx">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                </File>
+                <File Location="DSD">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="sm_car_DSD_lib.slx">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                </File>
+                <File Location="Dampers">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="Axle1">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="Dampers_Axle1.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Dampers_Axle1_Independent.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Dampers_Axle1_Interconnected.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Dampers_Axle1_None.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                    <File Location="Axle2">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="Dampers_Axle2.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Dampers_Axle2_Decoupled.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Dampers_Axle2_Independent.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Dampers_Axle2_Interconnected.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Dampers_Axle2_None.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                    <File Location="Damper">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="Damper_Basics.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                </File>
+                <File Location="Differential">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="Differential_Components.slx">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="Differential_Systems.slx">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="Gear1DShafts1D">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="Differential_Gear1DShafts1D.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                    <File Location="Gear1DShafts3D">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="Differential_Gear1DShafts3D.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                    <File Location="Gear1DShafts3Dfix">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="Differential_Gear1DShafts3Dfix.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                </File>
+                <File Location="Driveline">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="Axle2">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="Driveline_Axle2.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Driveline_Axle2_A12Visc_A1Diff_A2Diff.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Driveline_Axle2_A1_A1Diff.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Driveline_Axle2_A1_A2_A1Diff_A2Diff.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Driveline_Axle2_A1_L2_R2_A1Diff.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Driveline_Axle2_L1_R1_L2_R2.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Driveline_Axle2_None.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                </File>
+                <File Location="Driveshaft">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="Driveshaft_ShaftsAll.slx">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                </File>
+                <File Location="Linkage">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="DW_A">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="Linkage_DW_A.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                    <File Location="DW_B">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="Linkage_DW_B.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                    <File Location="DW_Decoupled">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="Linkage_DW_Decoupled.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Linkage_DW_Decoupled_NoSteer.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                    <File Location="Linkage_Decoupled_Systems.slx">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="Linkage_Systems.slx">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="RollHeave_Decoupled">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="RollHeave_Decoupled.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                    <File Location="Shock">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="Linkage_Shock.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                    <File Location="Suspension_Linkage.slx">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="Suspension_Linkage_Decoupled.slx">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                </File>
+                <File Location="Power">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="Cooling">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="Cooling_Components.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Motor2">
+                            <Info/>
+                            <DIR_SIGNIFIER Location="1">
+                                <Info/>
+                            </DIR_SIGNIFIER>
+                            <File Location="Cooling_Motor2.slx">
+                                <Info>
+                                    <Category UUID="FileClassCategory">
+                                        <Label UUID="design"/>
+                                    </Category>
+                                </Info>
+                            </File>
+                            <File Location="Cooling_Motor2_Liquid_Loop1.slx">
+                                <Info>
+                                    <Category UUID="FileClassCategory">
+                                        <Label UUID="design"/>
+                                    </Category>
+                                </Info>
+                            </File>
+                            <File Location="Cooling_Motor2_None.slx">
+                                <Info>
+                                    <Category UUID="FileClassCategory">
+                                        <Label UUID="design"/>
+                                    </Category>
+                                </Info>
+                            </File>
+                        </File>
+                        <File Location="Motor3">
+                            <Info/>
+                            <DIR_SIGNIFIER Location="1">
+                                <Info/>
+                            </DIR_SIGNIFIER>
+                            <File Location="Cooling_Motor3.slx">
+                                <Info>
+                                    <Category UUID="FileClassCategory">
+                                        <Label UUID="design"/>
+                                    </Category>
+                                </Info>
+                            </File>
+                            <File Location="Cooling_Motor3_Liquid_Loop1.slx">
+                                <Info>
+                                    <Category UUID="FileClassCategory">
+                                        <Label UUID="design"/>
+                                    </Category>
+                                </Info>
+                            </File>
+                            <File Location="Cooling_Motor3_Liquid_None.slx">
+                                <Info>
+                                    <Category UUID="FileClassCategory">
+                                        <Label UUID="design"/>
+                                    </Category>
+                                </Info>
+                            </File>
+                        </File>
+                        <File Location="Motor4">
+                            <Info/>
+                            <DIR_SIGNIFIER Location="1">
+                                <Info/>
+                            </DIR_SIGNIFIER>
+                            <File Location="Cooling_Motor4.slx">
+                                <Info>
+                                    <Category UUID="FileClassCategory">
+                                        <Label UUID="design"/>
+                                    </Category>
+                                </Info>
+                            </File>
+                            <File Location="Cooling_Motor4_Liquid_Loop1.slx">
+                                <Info>
+                                    <Category UUID="FileClassCategory">
+                                        <Label UUID="design"/>
+                                    </Category>
+                                </Info>
+                            </File>
+                            <File Location="Cooling_Motor4_Liquid_None.slx">
+                                <Info>
+                                    <Category UUID="FileClassCategory">
+                                        <Label UUID="design"/>
+                                    </Category>
+                                </Info>
+                            </File>
+                        </File>
+                    </File>
+                    <File Location="FuelCell">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="Components">
+                            <Info/>
+                            <DIR_SIGNIFIER Location="1">
+                                <Info/>
+                            </DIR_SIGNIFIER>
+                            <File Location="+GasN">
+                                <Info/>
+                                <DIR_SIGNIFIER Location="1">
+                                    <Info/>
+                                </DIR_SIGNIFIER>
+                                <File Location="composition_enum.m">
+                                    <Info>
+                                        <Category UUID="FileClassCategory">
+                                            <Label UUID="design"/>
+                                        </Category>
+                                    </Info>
+                                </File>
+                                <File Location="sl_postprocess.m">
+                                    <Info>
+                                        <Category UUID="FileClassCategory">
+                                            <Label UUID="design"/>
+                                        </Category>
+                                    </Info>
+                                </File>
+                            </File>
+                        </File>
+                    </File>
+                    <File Location="Power_Components.slx">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="Power_Systems.slx">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_controlparam_default.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                </File>
+                <File Location="Springs">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="Axle1">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="Springs_Axle1.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Springs_Axle1_Independent.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Springs_Axle1_Interconnected.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Springs_Axle1_Linear.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Springs_Axle1_None.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                    <File Location="Axle2">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="Springs_Axle2.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Springs_Axle2_Decoupled.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Springs_Axle2_Independent.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Springs_Axle2_Interconnected.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Springs_Axle2_Linear.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Springs_Axle2_None.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                    <File Location="Spring">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="Spring_Basics.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                </File>
+                <File Location="Steer">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="Ackermann">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="Steer_Ackermann.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Steer_Ackermann_Systems.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Steer_Ackermann_WheelsOnly.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                    <File Location="Rack">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="Steer_Rack.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="Steer_Rack_System.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                    <File Location="Wheel">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="FSAE_steering_wheel.STEP">
+                            <Info/>
+                        </File>
+                        <File Location="SteeringWheel_FSAE.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="SteeringWheel_Sedan.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="SteeringWheel_Systems.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                </File>
+                <File Location="Suspension">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="DOF15">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="Susp_DOF15.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                    <File Location="Suspension_Systems.slx">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                </File>
+                <File Location="Tire">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="+mfeval">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="readTIR.m">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                    <File Location="Data_TIR">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="Truck_430_50R38.tir">
+                            <Info/>
+                        </File>
+                    </File>
+                    <File Location="MFEval">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="MFeval_4p0">
+                            <Info/>
+                            <DIR_SIGNIFIER Location="1">
+                                <Info/>
+                            </DIR_SIGNIFIER>
+                            <File Location="MFeval">
+                                <Info/>
+                                <DIR_SIGNIFIER Location="1">
+                                    <Info/>
+                                </DIR_SIGNIFIER>
+                                <File Location="+mfeval">
+                                    <Info/>
+                                    <DIR_SIGNIFIER Location="1">
+                                        <Info/>
+                                    </DIR_SIGNIFIER>
+                                    <File Location="readTIR.m">
+                                        <Info>
+                                            <Category UUID="FileClassCategory">
+                                                <Label UUID="design"/>
+                                            </Category>
+                                        </Info>
+                                    </File>
+                                </File>
+                            </File>
+                        </File>
+                    </File>
+                    <File Location="MFMbody">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="MFMbody">
+                            <Info/>
+                            <DIR_SIGNIFIER Location="1">
+                                <Info/>
+                            </DIR_SIGNIFIER>
+                            <File Location="MFMbody_roadSurface.slx">
+                                <Info>
+                                    <Category UUID="FileClassCategory">
+                                        <Label UUID="design"/>
+                                    </Category>
+                                </Info>
+                            </File>
+                            <File Location="Tire_MFMbody.slx">
+                                <Info>
+                                    <Category UUID="FileClassCategory">
+                                        <Label UUID="design"/>
+                                    </Category>
+                                </Info>
+                            </File>
+                        </File>
+                    </File>
+                    <File Location="TireBody">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="TireBody_Models.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="TireBody_Parameterized.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                    <File Location="Tire_Models.slx">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                </File>
+                <File Location="Utilities">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="+Custom">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="PS_Connector_Gain.ssc">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="brake_force_to_pressure.ssc">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="custom_abs.ssc">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="custom_sign.ssc">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="translational_hardstop.ssc">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="translational_hardstop.svg">
+                            <Info/>
+                        </File>
+                    </File>
+                    <File Location="Camera">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="Camera_Frame_Definitions.slx">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="sm_car_define_camera.m">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="sm_car_define_camera_amandla.m">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                        <File Location="sm_car_gen_camera_database.m">
+                            <Info>
+                                <Category UUID="FileClassCategory">
+                                    <Label UUID="design"/>
+                                </Category>
+                            </Info>
+                        </File>
+                    </File>
+                    <File Location="Custom_lib.slx">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="SPL_Libs">
+                        <Info/>
+                        <DIR_SIGNIFIER Location="1">
+                            <Info/>
+                        </DIR_SIGNIFIER>
+                        <File Location="Extrusion_Scripts">
+                            <Info/>
+                            <DIR_SIGNIFIER Location="1">
+                                <Info/>
+                            </DIR_SIGNIFIER>
+                            <File Location="Extr_Data_BoxFillet.m">
+                                <Info>
+                                    <Category UUID="FileClassCategory">
+                                        <Label UUID="design"/>
+                                    </Category>
+                                </Info>
+                            </File>
+                            <File Location="Extr_Data_Gear.m">
+                                <Info>
+                                    <Category UUID="FileClassCategory">
+                                        <Label UUID="design"/>
+                                    </Category>
+                                </Info>
+                            </File>
+                            <File Location="Extr_Data_Link1Hole.m">
+                                <Info>
+                                    <Category UUID="FileClassCategory">
+                                        <Label UUID="design"/>
+                                    </Category>
+                                </Info>
+                            </File>
+                            <File Location="Extr_Data_Pulley.m">
+                                <Info>
+                                    <Category UUID="FileClassCategory">
+                                        <Label UUID="design"/>
+                                    </Category>
+                                </Info>
+                            </File>
+                            <File Location="Extr_Data_Rack.m">
+                                <Info>
+                                    <Category UUID="FileClassCategory">
+                                        <Label UUID="design"/>
+                                    </Category>
+                                </Info>
+                            </File>
+                        </File>
+                        <File Location="Libraries">
+                            <Info/>
+                            <DIR_SIGNIFIER Location="1">
+                                <Info/>
+                            </DIR_SIGNIFIER>
+                            <File Location="Images">
+                                <Info/>
+                                <DIR_SIGNIFIER Location="1">
+                                    <Info/>
+                                </DIR_SIGNIFIER>
+                                <File Location="Bevel_Gear_IMAGE.png">
+                                    <Info/>
+                                </File>
+                                <File Location="Box_Fillet_Tube_Curve_IMAGE.png">
+                                    <Info/>
+                                </File>
+                                <File Location="Box_Fillet_Tube_IMAGE.png">
+                                    <Info/>
+                                </File>
+                                <File Location="Box_Tube_Curve_IMAGE.png">
+                                    <Info/>
+                                </File>
+                                <File Location="Box_Tube_IMAGE.png">
+                                    <Info/>
+                                </File>
+                                <File Location="Brick_2_Port_IMAGE.png">
+                                    <Info/>
+                                </File>
+                                <File Location="Brick_3_Port_IMAGE.png">
+                                    <Info/>
+                                </File>
+                                <File Location="Cam_Circles_IMAGE.png">
+                                    <Info/>
+                                </File>
+                                <File Location="Circular_Tube_Curve_IMAGE.png">
+                                    <Info/>
+                                </File>
+                                <File Location="Circular_Tube_IMAGE.png">
+                                    <Info/>
+                                </File>
+                                <File Location="Cone_IMAGE.png">
+                                    <Info/>
+                                </File>
+                                <File Location="Custom_Extrusion_Curve_IMAGE.png">
+                                    <Info/>
+                                </File>
+                                <File Location="Custom_Extrusion_IMAGE.png">
+                                    <Info/>
+                                </File>
+                                <File Location="Cylinder_IMAGE.png">
+                                    <Info/>
+                                </File>
+                                <File Location="Elliptical_Tube_Curve_IMAGE.png">
+                                    <Info/>
+                                </File>
+                                <File Location="Elliptical_Tube_IMAGE.png">
+                                    <Info/>
+                                </File>
+                                <File Location="Gear_External_IMAGE.png">
+                                    <Info/>
+                                </File>
+                                <File Location="Gear_Internal_IMAGE.png">
+                                    <Info/>
+                                </File>
+                                <File Location="Link_IMAGE.png">
+                                    <Info/>
+                                </File>
+                                <File Location="Link_Seg_1_Hole_nx_IMAGE.png">
+                                    <Info/>
+                                </File>
+                                <File Location="Link_Seg_1_Hole_px_IMAGE.png">
+                                    <Info/>
+                                </File>
+                                <File Location="Mesh_IMAGE.png">
+                                    <Info/>
+                                </File>
+                                <File Location="Pulley_IMAGE.png">
+                                    <Info/>
+                                </File>
+                                <File Location="Rack_IMAGE.png">
+                                    <Info/>
+                                </File>
+                                <File Location="Sphere_IMAGE.png">
+                                    <Info/>
+                                </File>
+                                <File Location="sm_bevel_gear_2x_assembly.png">
+                                    <Info/>
+                                </File>
+                                <File Location="sm_bevel_gear_4x_closed_assembly.png">
+                                    <Info/>
+                                </File>
+                                <File Location="sm_bevel_gear_assembly.png">
+                                    <Info/>
+                                </File>
+                                <File Location="sm_common_gear_assembly_external.png">
+                                    <Info/>
+                                </File>
+                                <File Location="sm_common_gear_assembly_internal.png">
+                                    <Info/>
+                                </File>
+                                <File Location="sm_rack_and_pinion_assembly.png">
+                                    <Info/>
+                                </File>
+                                <File Location="sm_worm_gear_assembly.png">
+                                    <Info/>
+                                </File>
+                            </File>
+                            <File Location="Multibody_Parts_Lib.slx">
+                                <Info>
+                                    <Category UUID="FileClassCategory">
+                                        <Label UUID="design"/>
+                                    </Category>
+                                </Info>
+                            </File>
+                        </File>
+                    </File>
+                </File>
+                <File Location="Vehicle">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="Vehicle_Axle2.slx">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                </File>
+            </File>
+            <File Location="Visualization">
+                <Info/>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <File Location="Vehicle_Visualization.slx">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+            </File>
+            <File Location="sm_car_lib.slx">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="sm_car_lib_activeVariantBlock.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="sm_car_lib_find_leftright_blocks.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="sm_car_lib_maskInitTrigger.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+        </File>
+        <File Location="Scripts_Data">
+            <Info/>
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+            <File Location="Configure_Event">
+                <Info/>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <File Location="sm_car_config_driver.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="sm_car_config_logging.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="sm_car_config_maneuver.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="sm_car_config_road.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="sm_car_config_solver.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="sm_car_config_vehicle.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="sm_car_config_wind.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+            </File>
+            <File Location="Data_Vehicle">
+                <Info/>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <File Location="Assemble_Vehicle">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="compare_vehicle_ds.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_vehcfg_assemble_vehicle.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_vehcfg_checkConfig.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_vehcfg_checkHPs.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_vehcfg_getConfig.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_vehcfg_getTireRadius.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_vehcfg_getTrailerType.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_vehcfg_setAero.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_vehcfg_setAntiRollBar.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_vehcfg_setBody.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_vehcfg_setBodyGeometry.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_vehcfg_setBodyLoad.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_vehcfg_setBrakes.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_vehcfg_setDamper.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_vehcfg_setDriverHuman.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_vehcfg_setDrv.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_vehcfg_setPassenger.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_vehcfg_setPeopleOnOff.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_vehcfg_setPower.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_vehcfg_setPowerCooling.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_vehcfg_setSpring.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_vehcfg_setSteer.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_vehcfg_setSusp.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_vehcfg_setTire.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_vehcfg_setTireContact.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_vehcfg_setTireDyn.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_vehcfg_setTireSlip.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_vehcfg_setTireSolver.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                </File>
+                <File Location="Trailer.mat">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="Vehicle.mat">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="cleanedup">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="FINDME.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="VDatabase_file.mat">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="sm_car_data_Aero_Coefficients.xlsx">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_data_AntiRollBar_Simple.xlsx">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_data_Body2Axle.xlsx">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_data_Body3Axle.xlsx">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_data_BodyGeometry_CAD.xlsx">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_data_BodyGeometry_Trailer.xlsx">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_data_BodyLoad.xlsx">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_data_Brakes_Axle2_PedalAbstract_DiscDisc.xlsx">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_data_Brakes_Axle3_PedalAbstract_DiscDiscDisc.xlsx">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_data_Dampers_Axle2_None.xlsx">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_data_Dampers_Axle3_None.xlsx">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_data_Differential_Gear1DShafts1D.xlsx">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_data_Driveline_Axle2_None.xlsx">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_data_Driveline_Axle3_A2_A2Diff.xlsx">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_data_DriverHuman.xlsx">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_data_Driveshaft_Shaft1D.xlsx">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_data_Passenger.xlsx">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_data_Power_Ideal1Motor.xlsx">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_data_Springs_Axle2_None.xlsx">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_data_Springs_Axle3_None.xlsx">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_data_Steer_Ackermann.xlsx">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_data_Susp_DOF15.xlsx">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_data_TireBody_CAD_430_50R38.xlsx">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_data_TireBody_Parameterized.xlsx">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_data_Tire_MFMbody.xlsx">
+                        <Info/>
+                    </File>
+                    <File Location="sm_car_data_Tire_Tire2x.xlsx">
+                        <Info/>
+                    </File>
+                    <File Location="test.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                </File>
+                <File Location="importer.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="sm_car_database_import_excel.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="sm_car_import_control_param.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="sm_car_import_database.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="sm_car_import_vehicle_data.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="sm_car_import_vehicle_data_sheet.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="xlscol.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+            </File>
+            <File Location="Extrusions">
+                <Info/>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <File Location="Extr_Data_Cam_Roller_Curve.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="Extr_Data_Car_Profile.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="Extr_Data_Dashes.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="Extr_Data_Ellipse.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="Extr_Data_Mesh.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="Extr_Data_Ring.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="Extr_Data_Truck_Axle3_Profile.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="xy_data_membrane.mat">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+            </File>
+            <File Location="Plots">
+                <Info/>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <File Location="sm_car_plotmaneuver.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="sm_car_plotspeed.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+            </File>
+            <File Location="SetupFunctions">
+                <Info/>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <File Location="setUpDAFTruck.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="setupDoubleLaneChange.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="setupIdleTest.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="setupWideOpenBraking.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+            </File>
+            <File Location="sm_car_check_tire_model.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="sm_car_param_visual.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="sm_car_yawpitchroll_to_rotmat.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="startup_sm_car.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="tuneAxleSizing.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="paramDriver.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+        </File>
+        <File Location="sm_car_Axle3.slx">
+            <Info>
+                <Category UUID="FileClassCategory">
+                    <Label UUID="design"/>
+                </Category>
+            </Info>
+        </File>
+        <File Location="work">
+            <Info/>
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+            <File Location="sm_car_Axle3noLinksnoVariants.slxc">
+                <Info/>
+            </File>
+        </File>
+    </Files>
+    <Info Location="ProjectData">
+        <Info Name="SVT_Truck"/>
+    </Info>
+    <ProjectPath Location="Root">
+        <Reference Location="0108204c-aebe-4f21-a572-0aea25d49937">
+            <Info Ref="Libraries/Vehicle/Dampers/Axle2" Type="Relative"/>
+        </Reference>
+        <Reference Location="01e79077-5cfe-48e8-a206-c3b7b7f33b5c">
+            <Info Ref="Libraries/Vehicle/Vehicle" Type="Relative"/>
+        </Reference>
+        <Reference Location="033989ce-8a39-42d0-98d1-b70857fd280f">
+            <Info Ref="Libraries/Vehicle/Differential" Type="Relative"/>
+        </Reference>
+        <Reference Location="03b5beaa-de31-4646-92f1-6aa9ccd50a9e">
+            <Info Ref="Libraries/Vehicle/Tire/MFEval/MFeval_4p0/MFeval" Type="Relative"/>
+        </Reference>
+        <Reference Location="047ba33e-0267-41d4-b3de-156a440ca15b">
+            <Info Ref="Libraries/Vehicle/Brakes" Type="Relative"/>
+        </Reference>
+        <Reference Location="05698c7f-a4ea-4b7d-882d-a4bd120b1da5">
+            <Info Ref="Libraries/Vehicle/DSD" Type="Relative"/>
+        </Reference>
+        <Reference Location="085defa8-2152-4be3-b57a-0540b6c82360">
+            <Info Ref="Libraries/Images/Vehicle" Type="Relative"/>
+        </Reference>
+        <Reference Location="10aa4518-3f84-4436-8a22-7b24900645ac">
+            <Info Ref="Libraries/Event/Scene/Plane_Grid" Type="Relative"/>
+        </Reference>
+        <Reference Location="113efb25-5478-435d-9bc2-11e77bc8204a">
+            <Info Ref="Libraries/Images/Body" Type="Relative"/>
+        </Reference>
+        <Reference Location="12a35189-811e-49a2-8498-c36beecb0e19">
+            <Info Ref="Scripts_Data/Data_Vehicle/cleanedup" Type="Relative"/>
+        </Reference>
+        <Reference Location="14bc9ef7-5a4a-4715-bbdb-58e965f626cb">
+            <Info Ref="Scripts_Data" Type="Relative"/>
+        </Reference>
+        <Reference Location="1a539416-ea3b-46d3-bd96-02b2315b2a0e">
+            <Info Ref="Libraries/Vehicle/Linkage/DW_A" Type="Relative"/>
+        </Reference>
+        <Reference Location="1f283c64-bf00-4d74-961f-7b334463b35f">
+            <Info Ref="Libraries/Vehicle/CabinDAF" Type="Relative"/>
+        </Reference>
+        <Reference Location="20a2e0f1-b2a6-4880-913b-82c52f560ad5">
+            <Info Ref="Libraries/Vehicle/Brakes/Axle2" Type="Relative"/>
+        </Reference>
+        <Reference Location="23a88f83-00b6-4802-9f75-60c1be6c1182">
+            <Info Ref="Libraries/Images" Type="Relative"/>
+        </Reference>
+        <Reference Location="2687bec9-3a3a-4cf9-bd09-122762101d0a">
+            <Info Ref="Libraries/Vehicle/Linkage/DW_Decoupled" Type="Relative"/>
+        </Reference>
+        <Reference Location="28f81064-778b-4e6c-ab8c-481d4ffb84af">
+            <Info Ref="Libraries/Images/Documentation" Type="Relative"/>
+        </Reference>
+        <Reference Location="33d444c7-d8a2-47a8-9d00-e55390b83ff0">
+            <Info Ref="Libraries/Vehicle/Utilities" Type="Relative"/>
+        </Reference>
+        <Reference Location="37a5cf37-4455-41c4-8012-8a9d24df3cae">
+            <Info Ref="Libraries/Vehicle/Dampers/Axle1" Type="Relative"/>
+        </Reference>
+        <Reference Location="3ca9a4d1-f25e-45d9-b7cf-71d461718770">
+            <Info Ref="Libraries/Vehicle/Utilities/SPL_Libs/Extrusion_Scripts" Type="Relative"/>
+        </Reference>
+        <Reference Location="3d4ab6fe-c020-4839-9785-f0149acc923d">
+            <Info Ref="Libraries/Vehicle/Body" Type="Relative"/>
+        </Reference>
+        <Reference Location="41395184-dcb1-47af-9ddc-28ebbfc9b587">
+            <Info Ref="Libraries/Vehicle/Steer/Ackermann" Type="Relative"/>
+        </Reference>
+        <Reference Location="41458857-db5b-4a44-b6bb-968aec27d9c1">
+            <Info Ref="work" Type="Relative"/>
+        </Reference>
+        <Reference Location="444fd652-73f9-47cc-bb4d-8f327713d7d8">
+            <Info Ref="Libraries/Vehicle/Aero" Type="Relative"/>
+        </Reference>
+        <Reference Location="461ce739-3d51-4fd6-843b-5f7cce5ab0e8">
+            <Info Ref="Libraries/Vehicle/Suspension" Type="Relative"/>
+        </Reference>
+        <Reference Location="4a3a77d5-80c1-427b-af4c-911712c0c6ef">
+            <Info Ref="Libraries/Vehicle/Utilities/SPL_Libs/Libraries/Images" Type="Relative"/>
+        </Reference>
+        <Reference Location="4b8b6860-eede-4b80-a731-cd2315b3c1e3">
+            <Info Ref="Scripts_Data/Plots" Type="Relative"/>
+        </Reference>
+        <Reference Location="5416e38b-e700-4ec9-a9d0-1cef7c12f05c">
+            <Info Ref="Libraries/Vehicle/Springs/Axle2" Type="Relative"/>
+        </Reference>
+        <Reference Location="56098c94-5bc2-4ece-b357-684c99027fa0">
+            <Info Ref="Libraries/Vehicle/Power/Cooling/Motor2" Type="Relative"/>
+        </Reference>
+        <Reference Location="5b5f5684-3a92-4c6f-8f08-e6cc01d7daf5">
+            <Info Ref="Libraries/Vehicle/Body/CAD/Sedan_Hamba/STL/Wheel" Type="Relative"/>
+        </Reference>
+        <Reference Location="5b66c685-6b7a-4e8a-987a-b28d4f05e02d">
+            <Info Ref="Libraries/Vehicle/Power/FuelCell/Components" Type="Relative"/>
+        </Reference>
+        <Reference Location="5c5df956-00f4-43d4-946b-c7ec5a8c08ea">
+            <Info Ref="Libraries/Vehicle/Body/CAD/Sedan_Hamba" Type="Relative"/>
+        </Reference>
+        <Reference Location="5de033df-58ca-43ea-9410-def2efcc98e4">
+            <Info Ref="Libraries/Vehicle/Body/CAD/Sedan_Hamba/STL/Body" Type="Relative"/>
+        </Reference>
+        <Reference Location="5de81eb2-e964-466a-94b4-6d8f82f30f02">
+            <Info Ref="Libraries/Vehicle/Power" Type="Relative"/>
+        </Reference>
+        <Reference Location="6306a9f4-e7ff-4b82-9c87-b94124954741">
+            <Info Ref="Libraries/Vehicle/Body/CAD/Trailer_Kumanzi" Type="Relative"/>
+        </Reference>
+        <Reference Location="65e6b09d-eee5-4de3-8a41-f90ac4db2c31">
+            <Info Ref="" Type="Relative"/>
+        </Reference>
+        <Reference Location="668ec60c-064a-4030-8c99-049798029c14">
+            <Info Ref="Libraries/Vehicle/Linkage/DW_B" Type="Relative"/>
+        </Reference>
+        <Reference Location="6b8b3954-5e4f-42e5-a440-5b3a26b221d5">
+            <Info Ref="Scripts_Data/Data_Vehicle" Type="Relative"/>
+        </Reference>
+        <Reference Location="6c24c812-d2ae-496a-82c6-34008d9ed6f2">
+            <Info Ref="Libraries/Vehicle/Body/CAD/Trailer_Kumanzi_Small/Parts" Type="Relative"/>
+        </Reference>
+        <Reference Location="6e788585-add5-4c02-840a-6ccda0c5bdae">
+            <Info Ref="Libraries/Images/Vehicle_Trailer" Type="Relative"/>
+        </Reference>
+        <Reference Location="7114cc89-9af0-4dd6-89b5-bcf45d01744a">
+            <Info Ref="Libraries/Vehicle/Body/Human/CAD" Type="Relative"/>
+        </Reference>
+        <Reference Location="714cc7cb-4eb2-48a6-ae1e-bd9fedf55865">
+            <Info Ref="Scripts_Data/SetupFunctions" Type="Relative"/>
+        </Reference>
+        <Reference Location="718c0f0b-46d3-43c7-8487-d37b5336ff51">
+            <Info Ref="Libraries/Vehicle/Springs/Spring" Type="Relative"/>
+        </Reference>
+        <Reference Location="7489eba4-a3fb-4ff6-b0dc-c9baa17446c1">
+            <Info Ref="Libraries/Vehicle/AntiRollBar" Type="Relative"/>
+        </Reference>
+        <Reference Location="76c2ed2e-048e-435f-8225-a7dad0591b5c">
+            <Info Ref="Libraries/Vehicle/Utilities/Camera" Type="Relative"/>
+        </Reference>
+        <Reference Location="77ca3463-593d-4383-ba2d-5fdef23ceb39">
+            <Info Ref="Libraries/Vehicle/Power/Cooling/Motor3" Type="Relative"/>
+        </Reference>
+        <Reference Location="78eb8b56-0377-432a-9adc-c69bbefe19df">
+            <Info Ref="Libraries/Vehicle/Body/Human" Type="Relative"/>
+        </Reference>
+        <Reference Location="7b1fdc60-1327-4e1b-bc98-fedac5244a91">
+            <Info Ref="Libraries" Type="Relative"/>
+        </Reference>
+        <Reference Location="7bee309e-4c75-49df-9a86-743317ebf8b5">
+            <Info Ref="Scripts_Data/Data_Vehicle/Assemble_Vehicle" Type="Relative"/>
+        </Reference>
+        <Reference Location="83492784-9efe-4a4e-bdce-c6955371e1e7">
+            <Info Ref="Libraries/Vehicle/Body/CAD/Bus Makhulu" Type="Relative"/>
+        </Reference>
+        <Reference Location="86644549-c23d-4853-b32a-c75ec27a0bf4">
+            <Info Ref="Libraries/Vehicle/Differential/Gear1DShafts3D" Type="Relative"/>
+        </Reference>
+        <Reference Location="870ea662-06f4-464c-8df2-e41afae93a3c">
+            <Info Ref="Scripts_Data/Extrusions" Type="Relative"/>
+        </Reference>
+        <Reference Location="8b3f0d4f-e885-4ae1-9e07-9bfdbdf60815">
+            <Info Ref="Libraries/Vehicle/Power/Cooling" Type="Relative"/>
+        </Reference>
+        <Reference Location="8b8a946b-f9bd-445f-9943-819166e1f291">
+            <Info Ref="Libraries/Event/Scene/Double_Lane_Change" Type="Relative"/>
+        </Reference>
+        <Reference Location="910a80df-23cb-4979-a8bd-2d0faa0966d4">
+            <Info Ref="Libraries/Event" Type="Relative"/>
+        </Reference>
+        <Reference Location="93334ec9-c864-432a-993a-a2e9345cf1e5">
+            <Info Ref="Libraries/Vehicle/Body/Sedan" Type="Relative"/>
+        </Reference>
+        <Reference Location="951e9dd3-7e23-43e1-98ba-7111e34311e6">
+            <Info Ref="Libraries/Vehicle/Tire/TireBody" Type="Relative"/>
+        </Reference>
+        <Reference Location="9c806861-7613-44b8-9244-5328888dbc40">
+            <Info Ref="Libraries/Vehicle/Tire" Type="Relative"/>
+        </Reference>
+        <Reference Location="a1521328-a2e0-4b65-a113-278edb75ba20">
+            <Info Ref="Libraries/Event/Tools/OpenCRG_v1p1p2/matlab/lib" Type="Relative"/>
+        </Reference>
+        <Reference Location="a93bfebe-c663-4c30-b707-a2fd9418ae8a">
+            <Info Ref="Libraries/Images/Chassis" Type="Relative"/>
+        </Reference>
+        <Reference Location="a988cbea-03d5-41ae-8870-7b13bb9428b0">
+            <Info Ref="Libraries/Visualization" Type="Relative"/>
+        </Reference>
+        <Reference Location="ac442868-12d4-4a5f-a134-a1d57d911248">
+            <Info Ref="Libraries/Images/BodyGeometry" Type="Relative"/>
+        </Reference>
+        <Reference Location="b1c302b1-bec9-4fac-afdb-3a6599059684">
+            <Info Ref="Libraries/Vehicle/Driveline/Axle2" Type="Relative"/>
+        </Reference>
+        <Reference Location="b21ca877-6b72-48c4-92e5-dad06a09b211">
+            <Info Ref="Libraries/Vehicle/Linkage/Shock" Type="Relative"/>
+        </Reference>
+        <Reference Location="b2728b36-b5b0-487b-90be-61b728ec386a">
+            <Info Ref="Libraries/Event/Tools" Type="Relative"/>
+        </Reference>
+        <Reference Location="b3c69479-eb60-4d62-a606-49f2bc938625">
+            <Info Ref="Libraries/Vehicle/Cabin" Type="Relative"/>
+        </Reference>
+        <Reference Location="b40fc09b-234b-4ebc-a147-2a8ebf386914">
+            <Info Ref="Libraries/Vehicle/Suspension/DOF15" Type="Relative"/>
+        </Reference>
+        <Reference Location="b499060c-f7de-4557-89a5-9b5a4590c0de">
+            <Info Ref="Libraries/Vehicle/Dampers/Damper" Type="Relative"/>
+        </Reference>
+        <Reference Location="b61dbc26-5ebe-45b4-8ca4-46e5bec9df4d">
+            <Info Ref="Libraries/Vehicle/Linkage" Type="Relative"/>
+        </Reference>
+        <Reference Location="bc8dd0a8-e399-4767-85cc-1c7cb7ce0960">
+            <Info Ref="Libraries/Vehicle/Cabin/HelperFunctions" Type="Relative"/>
+        </Reference>
+        <Reference Location="bcec36ac-4634-42c4-a63e-73a802dd3523">
+            <Info Ref="Libraries/Vehicle/Steer/Rack" Type="Relative"/>
+        </Reference>
+        <Reference Location="bfd9163e-f298-4755-a002-3904758e8a6b">
+            <Info Ref="Libraries/Vehicle/Tire/MFMbody/MFMbody" Type="Relative"/>
+        </Reference>
+        <Reference Location="c0005027-3fdb-43af-83c5-2cd764c50fbd">
+            <Info Ref="Libraries/Vehicle/Driveshaft" Type="Relative"/>
+        </Reference>
+        <Reference Location="c6027760-4435-4cf0-9059-bea931cefb5c">
+            <Info Ref="Libraries/Event/Scene/CRG_Rough_Road" Type="Relative"/>
+        </Reference>
+        <Reference Location="c631eacf-7090-41ac-ab69-70192511447c">
+            <Info Ref="Libraries/Vehicle/Body/CAD/Truck_Amandla" Type="Relative"/>
+        </Reference>
+        <Reference Location="c8ec13a8-48df-499a-b3fe-6793819dd2eb">
+            <Info Ref="Libraries/Vehicle/Utilities/SPL_Libs/Libraries" Type="Relative"/>
+        </Reference>
+        <Reference Location="c93dacd6-1606-4a8b-b09a-459db10bc988">
+            <Info Ref="Libraries/Vehicle/Body/Semi_Truck" Type="Relative"/>
+        </Reference>
+        <Reference Location="ceb1ad73-bbf4-4fc7-9548-ab66a1ffa58d">
+            <Info Ref="Libraries/Vehicle/Body/CAD/Sedan_Hamba/STEP" Type="Relative"/>
+        </Reference>
+        <Reference Location="cf54ba3f-bf3e-49bb-a5d9-88b2d252de12">
+            <Info Ref="Libraries/Vehicle/Power/Cooling/Motor4" Type="Relative"/>
+        </Reference>
+        <Reference Location="d5438a62-87ff-446f-ba0e-080206bc6e97">
+            <Info Ref="Libraries/Vehicle/Body/CAD/Truck_Amandla/Parts" Type="Relative"/>
+        </Reference>
+        <Reference Location="d597db1a-94b2-4797-a994-b3f29b381b70">
+            <Info Ref="Scripts_Data/Configure_Event" Type="Relative"/>
+        </Reference>
+        <Reference Location="d6d9c4f8-93d6-4048-8b1b-f9112de67916">
+            <Info Ref="Libraries/Vehicle/Steer/Wheel" Type="Relative"/>
+        </Reference>
+        <Reference Location="d8ba7165-141e-400c-8f16-021534224b41">
+            <Info Ref="Libraries/Event/Scene/CRG_Rough_Road/Data" Type="Relative"/>
+        </Reference>
+        <Reference Location="dffb3582-59e8-4040-aaec-9b2a2fff3f95">
+            <Info Ref="Libraries/Vehicle/Chassis" Type="Relative"/>
+        </Reference>
+        <Reference Location="e7d5e698-8a6b-43ab-8a0f-e699157123c5">
+            <Info Ref="Libraries/Vehicle/Springs/Axle1" Type="Relative"/>
+        </Reference>
+        <Reference Location="ea249cab-374c-47b3-860e-7c3d522d5d54">
+            <Info Ref="Libraries/Vehicle/Body/CAD/Trailer_Kumanzi_Small" Type="Relative"/>
+        </Reference>
+        <Reference Location="ee7ebbb9-d483-49e2-826d-7cced5cb8468">
+            <Info Ref="Libraries/Vehicle/Tire/Data_TIR" Type="Relative"/>
+        </Reference>
+        <Reference Location="f01f89b4-9eb1-435e-86a8-9e7241755c20">
+            <Info Ref="Libraries/Vehicle/Body/CAD" Type="Relative"/>
+        </Reference>
+        <Reference Location="f03bdc6e-2102-470b-b74b-0022aade3712">
+            <Info Ref="Libraries/Vehicle/Differential/Gear1DShafts1D" Type="Relative"/>
+        </Reference>
+        <Reference Location="f2de6111-2503-461e-8005-65d5033e8f01">
+            <Info Ref="Libraries/Vehicle/Tire/MFMbody" Type="Relative"/>
+        </Reference>
+        <Reference Location="f343a507-d858-4bd7-b577-b591375242ec">
+            <Info Ref="Libraries/Vehicle/Body/Trailer" Type="Relative"/>
+        </Reference>
+        <Reference Location="f94ec6ec-5cac-4922-ae9e-cda5b7111d62">
+            <Info Ref="Libraries/Images/Cabin" Type="Relative"/>
+        </Reference>
+        <Reference Location="f99d43f5-fb3f-4498-a501-afb56ff8756c">
+            <Info Ref="Libraries/Vehicle/Differential/Gear1DShafts3Dfix" Type="Relative"/>
+        </Reference>
+        <Reference Location="f9ae3ba1-05be-4bf0-8d57-63d33ac2d458">
+            <Info Ref="Libraries/Vehicle/Linkage/RollHeave_Decoupled" Type="Relative"/>
+        </Reference>
+        <Reference Location="fca98577-1b96-4cb2-b1d4-60eaa0da5c64">
+            <Info Ref="Libraries/Vehicle/Body/CAD/Trailer_Kumanzi/Parts" Type="Relative"/>
+        </Reference>
+    </ProjectPath>
+    <WorkingFolders Location="Root">
+        <Reference Location="SimulinkCacheFolder">
+            <Info Ref="work" Type="Relative"/>
+        </Reference>
+        <Reference Location="SimulinkCodeGenFolder">
+            <Info Ref="work" Type="Relative"/>
+        </Reference>
+    </WorkingFolders>
+</project>
