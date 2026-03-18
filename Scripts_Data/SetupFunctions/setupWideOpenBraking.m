@@ -7,7 +7,7 @@
 
 %% Inputs: 
 roadSurface = 'plane'; % Choose 'plane' or 'CRG'
-plotting    = 0;       % Decide whether to plot or not
+plotting    = 1;       % Decide whether to plot or not
 
 %% Implementation
 % If the model is not open, then open it
@@ -36,6 +36,8 @@ sim('sm_car_Axle3');
 
 % Post-processing 
 if plotting == 1
-    figure; sm_car_plotmaneuver(Maneuver,logsout_sm_car);
-    figure; sm_car_plotspeed;
+    figure; 
+    sm_car_plotmaneuver(Maneuver,logsout_sm_car);
+    figure; 
+    sm_car_plotspeed;
 end
