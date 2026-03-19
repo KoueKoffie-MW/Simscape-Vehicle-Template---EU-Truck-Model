@@ -2323,13 +2323,6 @@
                             </Info>
                         </File>
                     </File>
-                    <File Location="Custom_lib.slx">
-                        <Info>
-                            <Category UUID="FileClassCategory">
-                                <Label UUID="design"/>
-                            </Category>
-                        </Info>
-                    </File>
                     <File Location="SPL_Libs">
                         <Info/>
                         <DIR_SIGNIFIER Location="1">
