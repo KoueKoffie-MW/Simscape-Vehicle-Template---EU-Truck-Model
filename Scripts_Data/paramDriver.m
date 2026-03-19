@@ -71,7 +71,7 @@ Driver.Long.gMaxDecel.Units        = 'm/s^2';
 Driver.Long.gMaxDecel.Comments     = '';
 
 % --- Lateral Parameters ---
-Driver.Lateral.xWheelbase.Value    = abs(Vehicle.Chassis.Body.Width.Value);
+Driver.Lateral.xWheelbase.Value    = Vehicle.Chassis.Body.xWheelbase.Value;
 Driver.Lateral.xWheelbase.Units    = 'm';
 Driver.Lateral.xWheelbase.Comments = 'Wheelbase of the vehicle';
 

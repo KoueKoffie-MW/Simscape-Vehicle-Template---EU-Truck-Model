@@ -326,12 +326,6 @@
                     <File Location="sm_car_body_cad.png">
                         <Info/>
                     </File>
-                    <File Location="sm_car_body_cad_bus_makhulu.png">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_body_cad_sedan_hamba.png">
-                        <Info/>
-                    </File>
                     <File Location="sm_car_body_cad_trailer_kumanzi.png">
                         <Info/>
                     </File>
@@ -339,9 +333,6 @@
                         <Info/>
                     </File>
                     <File Location="sm_car_body_cad_trailer_thwala.png">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_body_cad_truck_amandla.png">
                         <Info/>
                     </File>
                     <File Location="sm_car_body_default.png">
@@ -368,15 +359,6 @@
                     <File Location="sm_car_bodygeometry_cad.png">
                         <Info/>
                     </File>
-                    <File Location="sm_car_bodygeometry_cad_bus_makhulu.png">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_bodygeometry_cad_fsae_achilles.png">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_bodygeometry_cad_sedan_hamba.png">
-                        <Info/>
-                    </File>
                     <File Location="sm_car_bodygeometry_cad_trailer_kumanzi.png">
                         <Info/>
                     </File>
@@ -386,13 +368,7 @@
                     <File Location="sm_car_bodygeometry_cad_trailer_thwala.png">
                         <Info/>
                     </File>
-                    <File Location="sm_car_bodygeometry_cad_truck_amandla.png">
-                        <Info/>
-                    </File>
                     <File Location="sm_car_bodygeometry_cad_truck_daf.png">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_bodygeometry_sedan.png">
                         <Info/>
                     </File>
                     <File Location="sm_car_bodygeometry_semi_truck.png">
@@ -458,28 +434,16 @@
                     <File Location="sm_car_chassis_cad.png">
                         <Info/>
                     </File>
-                    <File Location="sm_car_chassis_cad_bus_makhulu.png">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_chassis_cad_sedan_hamba.png">
-                        <Info/>
-                    </File>
                     <File Location="sm_car_chassis_cad_trailer_kumanzi.png">
                         <Info/>
                     </File>
                     <File Location="sm_car_chassis_cad_trailer_thwala.png">
                         <Info/>
                     </File>
-                    <File Location="sm_car_chassis_cad_truck_amandla.png">
-                        <Info/>
-                    </File>
                     <File Location="sm_car_chassis_cad_truck_daf.png">
                         <Info/>
                     </File>
                     <File Location="sm_car_chassis_default.png">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_chassis_sedan.png">
                         <Info/>
                     </File>
                     <File Location="sm_car_chassis_semi_truck.png">
@@ -504,6 +468,12 @@
                         <Info/>
                     </File>
                 </File>
+                <File Location="Driver.png">
+                    <Info/>
+                </File>
+                <File Location="ECU.png">
+                    <Info/>
+                </File>
                 <File Location="Vehicle">
                     <Info/>
                     <DIR_SIGNIFIER Location="1">
@@ -524,28 +494,13 @@
                     <File Location="sm_car_vehicle_box_trailer.png">
                         <Info/>
                     </File>
-                    <File Location="sm_car_vehicle_cad_bus_makhulu.png">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_vehicle_cad_bus_makhulu3axle.png">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_vehicle_cad_sedan_hamba.png">
-                        <Info/>
-                    </File>
                     <File Location="sm_car_vehicle_cad_trailer_kumanzi.png">
                         <Info/>
                     </File>
                     <File Location="sm_car_vehicle_cad_trailer_thwala.png">
                         <Info/>
                     </File>
-                    <File Location="sm_car_vehicle_cad_truck_amandla.png">
-                        <Info/>
-                    </File>
                     <File Location="sm_car_vehicle_cad_truck_daf.png">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_vehicle_sedan.png">
                         <Info/>
                     </File>
                     <File Location="sm_car_vehicle_semi_truck.png">
@@ -572,58 +527,13 @@
                     <File Location="sm_car_vehicle_axle3_default_none.png">
                         <Info/>
                     </File>
-                    <File Location="sm_car_vehicle_cad_bus_makhulu3axle_box_trailer.png">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_vehicle_cad_bus_makhulu3axle_cad_trailer_kumanzi.png">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_vehicle_cad_bus_makhulu3axle_none.png">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_vehicle_cad_bus_makhulu3axle_tank_trailer.png">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_vehicle_cad_bus_makhulu_basic_trailer.png">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_vehicle_cad_bus_makhulu_cad_trailer_thwala.png">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_vehicle_cad_bus_makhulu_none.png">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_vehicle_cad_sedan_hamba_basic_trailer.png">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_vehicle_cad_sedan_hamba_cad_trailer_thwala.png">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_vehicle_cad_sedan_hamba_none.png">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_vehicle_cad_truck_amandla_box_trailer.png">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_vehicle_cad_truck_amandla_cad_trailer_kumanzi.png">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_vehicle_cad_truck_amandla_none.png">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_vehicle_cad_truck_amandla_tank_trailer.png">
+                    <File Location="sm_car_vehicle_cad_trailer_kumanzi_small.png">
                         <Info/>
                     </File>
                     <File Location="sm_car_vehicle_cad_truck_daf_none.png">
                         <Info/>
                     </File>
-                    <File Location="sm_car_vehicle_sedan_basic_trailer.png">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_vehicle_sedan_cad_trailer_thwala.png">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_vehicle_sedan_none.png">
+                    <File Location="sm_car_vehicle_cad_truck_daf_trailer.png">
                         <Info/>
                     </File>
                     <File Location="sm_car_vehicle_semi_truck_box_trailer.png">
@@ -649,9 +559,6 @@
                     <Info/>
                 </File>
                 <File Location="sm_car_linkage_trackrod_IMAGE.png">
-                    <Info/>
-                </File>
-                <File Location="sm_car_primitive_bushing.png">
                     <Info/>
                 </File>
                 <File Location="sm_car_primitive_gimbal.png">
@@ -1006,30 +913,6 @@
                                 </Category>
                             </Info>
                         </File>
-                        <File Location="Bus Makhulu">
-                            <Info/>
-                            <DIR_SIGNIFIER Location="1">
-                                <Info/>
-                            </DIR_SIGNIFIER>
-                            <File Location="Bus_Makhulu_WheelF_Bolts.STEP">
-                                <Info/>
-                            </File>
-                            <File Location="Bus_Makhulu_WheelF_Rim.STEP">
-                                <Info/>
-                            </File>
-                            <File Location="Bus_Makhulu_WheelF_Tire.STEP">
-                                <Info/>
-                            </File>
-                            <File Location="Bus_Makhulu_WheelR_BoltsR.STEP">
-                                <Info/>
-                            </File>
-                            <File Location="Bus_Makhulu_WheelR_Rim.STEP">
-                                <Info/>
-                            </File>
-                            <File Location="Bus_Makhulu_WheelR_Tires.STEP">
-                                <Info/>
-                            </File>
-                        </File>
                         <File Location="Sedan_Hamba">
                             <Info/>
                             <DIR_SIGNIFIER Location="1">
@@ -1207,37 +1090,6 @@
                                 <File Location="Trailer_Kumanzi_Tank_Small.SLDPRT">
                                     <Info/>
                                 </File>
-                            </File>
-                        </File>
-                        <File Location="Truck_Amandla">
-                            <Info/>
-                            <DIR_SIGNIFIER Location="1">
-                                <Info/>
-                            </DIR_SIGNIFIER>
-                            <File Location="Parts">
-                                <Info/>
-                                <DIR_SIGNIFIER Location="1">
-                                    <Info/>
-                                </DIR_SIGNIFIER>
-                                <File Location="Truck_Amandla_Cabin.step">
-                                    <Info/>
-                                </File>
-                                <File Location="Truck_Amandla_Frame.step">
-                                    <Info/>
-                                </File>
-                                <File Location="Truck_Amandla_Wheel_Rim.step">
-                                    <Info/>
-                                </File>
-                                <File Location="Truck_Amandla_Wheel_Tire.step">
-                                    <Info/>
-                                </File>
-                            </File>
-                            <File Location="Truck_Amandla_Parts.slx">
-                                <Info>
-                                    <Category UUID="FileClassCategory">
-                                        <Label UUID="design"/>
-                                    </Category>
-                                </Info>
                             </File>
                         </File>
                     </File>
@@ -2697,6 +2549,9 @@
                 </Info>
             </File>
         </File>
+        <File Location="README.md">
+            <Info/>
+        </File>
         <File Location="Scripts_Data">
             <Info/>
             <DIR_SIGNIFIER Location="1">
@@ -2978,112 +2833,21 @@
                         </Category>
                     </Info>
                 </File>
-                <File Location="cleanedup">
-                    <Info/>
-                    <DIR_SIGNIFIER Location="1">
-                        <Info/>
-                    </DIR_SIGNIFIER>
-                    <File Location="FINDME.m">
-                        <Info>
-                            <Category UUID="FileClassCategory">
-                                <Label UUID="design"/>
-                            </Category>
-                        </Info>
-                    </File>
-                    <File Location="VDatabase_file.mat">
-                        <Info>
-                            <Category UUID="FileClassCategory">
-                                <Label UUID="design"/>
-                            </Category>
-                        </Info>
-                    </File>
-                    <File Location="sm_car_data_Aero_Coefficients.xlsx">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_data_AntiRollBar_Simple.xlsx">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_data_Body2Axle.xlsx">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_data_Body3Axle.xlsx">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_data_BodyGeometry_CAD.xlsx">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_data_BodyGeometry_Trailer.xlsx">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_data_BodyLoad.xlsx">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_data_Brakes_Axle2_PedalAbstract_DiscDisc.xlsx">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_data_Brakes_Axle3_PedalAbstract_DiscDiscDisc.xlsx">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_data_Dampers_Axle2_None.xlsx">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_data_Dampers_Axle3_None.xlsx">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_data_Differential_Gear1DShafts1D.xlsx">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_data_Driveline_Axle2_None.xlsx">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_data_Driveline_Axle3_A2_A2Diff.xlsx">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_data_DriverHuman.xlsx">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_data_Driveshaft_Shaft1D.xlsx">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_data_Passenger.xlsx">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_data_Power_Ideal1Motor.xlsx">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_data_Springs_Axle2_None.xlsx">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_data_Springs_Axle3_None.xlsx">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_data_Steer_Ackermann.xlsx">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_data_Susp_DOF15.xlsx">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_data_TireBody_CAD_430_50R38.xlsx">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_data_TireBody_Parameterized.xlsx">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_data_Tire_MFMbody.xlsx">
-                        <Info/>
-                    </File>
-                    <File Location="sm_car_data_Tire_Tire2x.xlsx">
-                        <Info/>
-                    </File>
-                    <File Location="test.m">
-                        <Info>
-                            <Category UUID="FileClassCategory">
-                                <Label UUID="design"/>
-                            </Category>
-                        </Info>
-                    </File>
-                </File>
                 <File Location="importer.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="paramTrailer_DAF.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="paramVehicle_DAF.m">
                     <Info>
                         <Category UUID="FileClassCategory">
                             <Label UUID="design"/>
@@ -3220,13 +2984,6 @@
                 <DIR_SIGNIFIER Location="1">
                     <Info/>
                 </DIR_SIGNIFIER>
-                <File Location="setUpDAFTruck.m">
-                    <Info>
-                        <Category UUID="FileClassCategory">
-                            <Label UUID="design"/>
-                        </Category>
-                    </Info>
-                </File>
                 <File Location="setupDoubleLaneChange.m">
                     <Info>
                         <Category UUID="FileClassCategory">
@@ -3248,6 +3005,13 @@
                         </Category>
                     </Info>
                 </File>
+            </File>
+            <File Location="paramDriver.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
             </File>
             <File Location="sm_car_check_tire_model.m">
                 <Info>
@@ -3284,13 +3048,6 @@
                     </Category>
                 </Info>
             </File>
-            <File Location="paramDriver.m">
-                <Info>
-                    <Category UUID="FileClassCategory">
-                        <Label UUID="design"/>
-                    </Category>
-                </Info>
-            </File>
         </File>
         <File Location="sm_car_Axle3.slx">
             <Info>
@@ -3304,9 +3061,6 @@
             <DIR_SIGNIFIER Location="1">
                 <Info/>
             </DIR_SIGNIFIER>
-            <File Location="sm_car_Axle3noLinksnoVariants.slxc">
-                <Info/>
-            </File>
         </File>
     </Files>
     <Info Location="ProjectData">
@@ -3340,9 +3094,6 @@
         <Reference Location="113efb25-5478-435d-9bc2-11e77bc8204a">
             <Info Ref="Libraries/Images/Body" Type="Relative"/>
         </Reference>
-        <Reference Location="12a35189-811e-49a2-8498-c36beecb0e19">
-            <Info Ref="Scripts_Data/Data_Vehicle/cleanedup" Type="Relative"/>
-        </Reference>
         <Reference Location="14bc9ef7-5a4a-4715-bbdb-58e965f626cb">
             <Info Ref="Scripts_Data" Type="Relative"/>
         </Reference>
@@ -3364,6 +3115,9 @@
         <Reference Location="28f81064-778b-4e6c-ab8c-481d4ffb84af">
             <Info Ref="Libraries/Images/Documentation" Type="Relative"/>
         </Reference>
+        <Reference Location="2f48ef23-221a-47f0-a468-62e958866672">
+            <Info Ref="Libraries/Event/Tools/OpenCRG_v1p1p2/matlab" Type="Relative"/>
+        </Reference>
         <Reference Location="33d444c7-d8a2-47a8-9d00-e55390b83ff0">
             <Info Ref="Libraries/Vehicle/Utilities" Type="Relative"/>
         </Reference>
@@ -3372,6 +3126,9 @@
         </Reference>
         <Reference Location="3ca9a4d1-f25e-45d9-b7cf-71d461718770">
             <Info Ref="Libraries/Vehicle/Utilities/SPL_Libs/Extrusion_Scripts" Type="Relative"/>
+        </Reference>
+        <Reference Location="3d478138-e030-43c8-971f-52a2f8c55dc9">
+            <Info Ref="Libraries/Vehicle" Type="Relative"/>
         </Reference>
         <Reference Location="3d4ab6fe-c020-4839-9785-f0149acc923d">
             <Info Ref="Libraries/Vehicle/Body" Type="Relative"/>
@@ -3391,8 +3148,14 @@
         <Reference Location="4a3a77d5-80c1-427b-af4c-911712c0c6ef">
             <Info Ref="Libraries/Vehicle/Utilities/SPL_Libs/Libraries/Images" Type="Relative"/>
         </Reference>
+        <Reference Location="4ac1c9bd-6820-4c44-9310-b4c51325c1fa">
+            <Info Ref="Libraries/Vehicle/Tire/MFEval" Type="Relative"/>
+        </Reference>
         <Reference Location="4b8b6860-eede-4b80-a731-cd2315b3c1e3">
             <Info Ref="Scripts_Data/Plots" Type="Relative"/>
+        </Reference>
+        <Reference Location="51a491da-4bc4-4d57-a86e-94af1e627d01">
+            <Info Ref="Libraries/Vehicle/Body/CAD/Truck_Amandla/Parts" Type="Relative"/>
         </Reference>
         <Reference Location="5416e38b-e700-4ec9-a9d0-1cef7c12f05c">
             <Info Ref="Libraries/Vehicle/Springs/Axle2" Type="Relative"/>
@@ -3414,6 +3177,9 @@
         </Reference>
         <Reference Location="5de81eb2-e964-466a-94b4-6d8f82f30f02">
             <Info Ref="Libraries/Vehicle/Power" Type="Relative"/>
+        </Reference>
+        <Reference Location="6225e130-eedf-44a8-8508-fe0ca1f3acaf">
+            <Info Ref="Libraries/Vehicle/Body/CAD/Bus Makhulu" Type="Relative"/>
         </Reference>
         <Reference Location="6306a9f4-e7ff-4b82-9c87-b94124954741">
             <Info Ref="Libraries/Vehicle/Body/CAD/Trailer_Kumanzi" Type="Relative"/>
@@ -3460,8 +3226,8 @@
         <Reference Location="7bee309e-4c75-49df-9a86-743317ebf8b5">
             <Info Ref="Scripts_Data/Data_Vehicle/Assemble_Vehicle" Type="Relative"/>
         </Reference>
-        <Reference Location="83492784-9efe-4a4e-bdce-c6955371e1e7">
-            <Info Ref="Libraries/Vehicle/Body/CAD/Bus Makhulu" Type="Relative"/>
+        <Reference Location="7f50d566-3e97-4098-aa73-e771035ecf3c">
+            <Info Ref="Libraries/Vehicle/Springs" Type="Relative"/>
         </Reference>
         <Reference Location="86644549-c23d-4853-b32a-c75ec27a0bf4">
             <Info Ref="Libraries/Vehicle/Differential/Gear1DShafts3D" Type="Relative"/>
@@ -3484,11 +3250,23 @@
         <Reference Location="951e9dd3-7e23-43e1-98ba-7111e34311e6">
             <Info Ref="Libraries/Vehicle/Tire/TireBody" Type="Relative"/>
         </Reference>
+        <Reference Location="99b4f4db-dc01-4199-ba0c-4486a41debc4">
+            <Info Ref="Libraries/Event/Scene" Type="Relative"/>
+        </Reference>
+        <Reference Location="99cf58db-098c-4f97-848d-9283d8541975">
+            <Info Ref="Libraries/Vehicle/Utilities/SPL_Libs" Type="Relative"/>
+        </Reference>
         <Reference Location="9c806861-7613-44b8-9244-5328888dbc40">
             <Info Ref="Libraries/Vehicle/Tire" Type="Relative"/>
         </Reference>
+        <Reference Location="9d94befd-51be-46aa-9eeb-3c77eaae8a6c">
+            <Info Ref="Libraries/Vehicle/Power/FuelCell" Type="Relative"/>
+        </Reference>
         <Reference Location="a1521328-a2e0-4b65-a113-278edb75ba20">
             <Info Ref="Libraries/Event/Tools/OpenCRG_v1p1p2/matlab/lib" Type="Relative"/>
+        </Reference>
+        <Reference Location="a6100f8d-13a4-45e0-bff5-f69b01d96247">
+            <Info Ref="Libraries/Vehicle/Driveline" Type="Relative"/>
         </Reference>
         <Reference Location="a93bfebe-c663-4c30-b707-a2fd9418ae8a">
             <Info Ref="Libraries/Images/Chassis" Type="Relative"/>
@@ -3535,9 +3313,6 @@
         <Reference Location="c6027760-4435-4cf0-9059-bea931cefb5c">
             <Info Ref="Libraries/Event/Scene/CRG_Rough_Road" Type="Relative"/>
         </Reference>
-        <Reference Location="c631eacf-7090-41ac-ab69-70192511447c">
-            <Info Ref="Libraries/Vehicle/Body/CAD/Truck_Amandla" Type="Relative"/>
-        </Reference>
         <Reference Location="c8ec13a8-48df-499a-b3fe-6793819dd2eb">
             <Info Ref="Libraries/Vehicle/Utilities/SPL_Libs/Libraries" Type="Relative"/>
         </Reference>
@@ -3550,8 +3325,11 @@
         <Reference Location="cf54ba3f-bf3e-49bb-a5d9-88b2d252de12">
             <Info Ref="Libraries/Vehicle/Power/Cooling/Motor4" Type="Relative"/>
         </Reference>
-        <Reference Location="d5438a62-87ff-446f-ba0e-080206bc6e97">
-            <Info Ref="Libraries/Vehicle/Body/CAD/Truck_Amandla/Parts" Type="Relative"/>
+        <Reference Location="cfd7e19a-e28f-4462-945a-3089342522fd">
+            <Info Ref="Libraries/Vehicle/Dampers" Type="Relative"/>
+        </Reference>
+        <Reference Location="d4d10573-5144-481c-943f-8e06874ead7c">
+            <Info Ref="Libraries/Vehicle/Body/CAD/Truck_Amandla" Type="Relative"/>
         </Reference>
         <Reference Location="d597db1a-94b2-4797-a994-b3f29b381b70">
             <Info Ref="Scripts_Data/Configure_Event" Type="Relative"/>
@@ -3561,6 +3339,9 @@
         </Reference>
         <Reference Location="d8ba7165-141e-400c-8f16-021534224b41">
             <Info Ref="Libraries/Event/Scene/CRG_Rough_Road/Data" Type="Relative"/>
+        </Reference>
+        <Reference Location="dc531a6f-72df-4e6d-a969-8c44c8c83e3c">
+            <Info Ref="Libraries/Event/Tools/OpenCRG_v1p1p2" Type="Relative"/>
         </Reference>
         <Reference Location="dffb3582-59e8-4040-aaec-9b2a2fff3f95">
             <Info Ref="Libraries/Vehicle/Chassis" Type="Relative"/>
@@ -3573,6 +3354,12 @@
         </Reference>
         <Reference Location="ee7ebbb9-d483-49e2-826d-7cced5cb8468">
             <Info Ref="Libraries/Vehicle/Tire/Data_TIR" Type="Relative"/>
+        </Reference>
+        <Reference Location="eeac082b-77f8-4565-a022-3a1b4e4e063b">
+            <Info Ref="Libraries/Vehicle/Tire/MFEval/MFeval_4p0" Type="Relative"/>
+        </Reference>
+        <Reference Location="efcf2b9c-1819-4d28-b587-7ebf4e68b45a">
+            <Info Ref="Libraries/Vehicle/Body/CAD/Sedan_Hamba/STL" Type="Relative"/>
         </Reference>
         <Reference Location="f01f89b4-9eb1-435e-86a8-9e7241755c20">
             <Info Ref="Libraries/Vehicle/Body/CAD" Type="Relative"/>
@@ -3594,6 +3381,9 @@
         </Reference>
         <Reference Location="f9ae3ba1-05be-4bf0-8d57-63d33ac2d458">
             <Info Ref="Libraries/Vehicle/Linkage/RollHeave_Decoupled" Type="Relative"/>
+        </Reference>
+        <Reference Location="fc3877f0-153e-42a1-b0a6-f43538db8297">
+            <Info Ref="Libraries/Vehicle/Steer" Type="Relative"/>
         </Reference>
         <Reference Location="fca98577-1b96-4cb2-b1d4-60eaa0da5c64">
             <Info Ref="Libraries/Vehicle/Body/CAD/Trailer_Kumanzi/Parts" Type="Relative"/>

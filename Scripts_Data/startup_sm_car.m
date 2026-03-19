@@ -18,22 +18,13 @@ function startup_sm_car
 modelname = 'sm_car_Axle3';
 open_system(modelname);
 
-%% 2) Load Vehicle and Trailer Parameter
-% Parameters for the vehicle
-load('Vehicle.mat');
+%% 2) Load Vehicle and Trailer Parameters
+% Call the consolidated DAF truck parameter scripts
+paramVehicle_DAF;
+paramTrailer_DAF;
 
-%% Additional code to resize the truck to the DAF model: 
-% Additional: The model has been extended with a cabin model.
-% This model is not used yet whose parameters are assigned here below: 
-% Vehicle = sm_car_param_cabin(Vehicle);
-
-% Parameters for the trailer
-load('Trailer.mat');
-
-%% This function has been created to update all required variable to simulate the DAF truck
-setUpDAFTruck;
 assignin('base','Trailer',Trailer);
-assignin('base','Vehicle',Vehicle);
+assignin('base', 'Vehicle', Vehicle);
 
 
 %% 3) Set up a Maneuver, the Initial Position of the Vehicle and the Driver

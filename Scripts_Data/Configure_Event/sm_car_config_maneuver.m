@@ -90,6 +90,7 @@ if strcmp(maneuver,'double lane change')
     % Preview distance in m for different speed (in m/s)
     Maneuver.xPreview.x.Value = [2.5 3 21];
     Maneuver.xPreview.v.Value = [0 5 20];
+    Maneuver.nPreviewPoints.Value = 5; % Needed for Pure Pursuit if used
 
     % The actual trajectory. Has the following variables
     % x,y,z coordinates in m | vx: Speed over time in m/s
